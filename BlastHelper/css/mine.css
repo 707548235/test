@@ -1,0 +1,159 @@
+#mine_info{
+    margin: 10px 0;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+}
+.content{
+    overflow: auto;
+    margin: 44px 0 60px;
+}
+.mine_header{
+    position: relative;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+#mine_icon{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+#nickname{
+    font-size: 16px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 70px;
+}
+.nickname_box{
+    display: inline-block;
+    margin: 10px;
+}
+.nickname_box span{
+    font-size: 13px;
+    margin-left: 70px;
+
+}
+.level_box{
+    height: 35px;
+    padding: 0 15px;
+}
+.level{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 35px;
+}
+#now_lev{
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 3px;
+    font-size: 11px;
+    margin: 0 5px;
+}
+#less_lev{
+    font-size: 11px;
+}
+.mineList li{
+    background-color: #ffffff;
+    padding: 10px 15px;
+    font-size: 16px;
+    position: relative;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.mineList img{
+    display: inline-block;
+}
+.right{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/defused_right.png) no-repeat center;
+    position: absolute;
+    margin: auto 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.mineList li:first-child{
+    border-top: 1px solid #C7C7C7;
+    margin: 10px 0;
+}
+.mineList li:nth-child(2){
+    border-top: 1px solid #C7C7C7;
+}
+.mineList li:nth-child(4),.mineList li:last-child{
+    border-top: 1px solid #C7C7C7;
+    margin-top: 10px;
+}
+.dialog_body{
+    font-size: 16px;
+    text-align: center;
+}
+.dialog_btn{
+    padding: 0;
+}
+.dialog_btn div{
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 0;
+}
+.dialog_btn div:first-child{
+    border-right: 1px solid #E5E5E5;
+}
+/*模态框垂直居中*/
+#exit_modal{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 80%;
+}
+/*顶部导航栏未提取*/
+.common_header {
+    text-align: center;
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header_title{
+    margin: 0;
+    padding: 12px 0;
+}
+/*底部导航栏未提取*/
+.nav_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 60px;
+    border-top: 1px solid #D1D1D1;
+}
+.nav_bottom_ul{
+    text-align: center;
+    padding: 5px;
+}
+.nav_bottom li{
+    float: left;
+    display: inline-block;
+    width: 33%;
+}
+.nav_bottom img{
+    display: inline-block;
+}
+.nav_bottom_txt{
+    font-size: 10px;
+    margin-top:7px;
+}
+.nav_bottom_ul img{
+    margin-top: 4px;
+}

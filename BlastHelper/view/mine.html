@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+    <link href="../css/mine.css" rel="stylesheet">
+</head>
+<body class="bg_gray">
+    <div>
+        <div class="common_header">
+            <h4 class="header_title color_white h4 bg_black">个人信息</h4>
+        </div>
+        <div class="content">
+        <div id="mine_info" class="bg_white">
+            <div class="mine_header">
+                <a href="../view/mine_info.html">
+                    <img src="../img/head_icon.png" id="mine_icon">
+                    <div class="nickname_box">
+                        <p id="nickname" style="color:#323232">昵称</p>
+                        <span class="color_gray_8" style="color:#323232">查看个人主页或编辑简历</span>
+                    </div>
+                    <div class="right"></div>
+                </a>
+            </div>
+            <div class="level_box">
+                <span class="level color_black_8">等级</span><span id="now_lev" class="color_white bg_red">LV.<span id="nowL">0</span></span><span id="less_lev" class="color_gray_8">还差<span id="lessL">60</span>经验到达LV.<span id="nextL">1</span></span>
+            </div>
+        </div>
+        <div>
+            <ul class="mineList">
+                <li>
+                    <a href="blast_circle.html" id="m_trends">
+                        <div>
+                            <img src="../img/mine_state.png"> <span class="color_black_2" style="padding-left: 15px">我的动态</span> <div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mine_exep.html">
+                        <div>
+                            <img src="../img/mine_exp.png"> <span class="color_black_2" style="padding-left: 10px">我的经验</span> <div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+                <li style="display: none">
+                    <a href="mine_money.html">
+                        <div>
+                            <img src="../img/mine_money.png"> <span class="color_black_2" style="padding-left: 15px">我的余额</span> <div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="blast_circle.html" id="m_say">
+                        <div>
+                            <img src="../img/mine_say.png" > <span class="color_black_2" style="padding-left: 15px">我的点评</span> <div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="blast_circle.html" id="m_good">
+                        <div>
+                            <img src="../img/mine_good.png"> <span class="color_black_2" style="padding-left: 15px">我的赞</span> <div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" data-toggle="modal" data-target="#exit_modal">
+                        <div>
+                            <img src="../img/mine_exit.png"> <span class="color_black_2" style="padding-left: 10px">退出登录</span><div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- 模态框-->
+        <div class="modal fade" id="exit_modal" role="dialog" aria-labelledby="exit_modal" aria-hidden="true" backdrop="static" data-keyboarf="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body dialog_body">确认退出当前用户？</div>
+                    <div class="modal-footer dialog_btn">
+                        <div class="dialog_channel" data-dismiss="modal">取消</div>
+                        <div class="dialog_ok">确认</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bottom-->
+        <div class="nav_bottom bg_white">
+            <ul class="nav_bottom_ul">
+                <li>
+                    <a href="../view/home.html">
+                        <img src="../img/nav_bottom_1.png">
+                        <p class="nav_bottom_txt color_gray_7 ">首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../view/library_new.html">
+                        <img src="../img/nav_bottom_2.png">
+                        <p class="nav_bottom_txt color_gray_7">参数表</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../view/mine.html">
+                        <img src="../img/nav_bottom_focus_3.png">
+                        <p class="nav_bottom_txt color_blue">我的</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="../lib/jquery-3.1.1.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script>$.noConflict();</script>-->
+    <!--<script src="../lib/zepto-1.2.0.js"></script>-->
+    <!--<script src="../lib/zepto-touch.js"></script>-->
+    <script src="../lib/layer_mobile/layer.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/mine.js"></script>
+</body>
+</html>

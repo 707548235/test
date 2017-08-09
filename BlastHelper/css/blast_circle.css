@@ -1,0 +1,118 @@
+/*公共头部分未提取*/
+.common_header{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 44px;
+}
+.header_title{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    right: 70px;
+}
+.common_header a{
+    display: block;
+    width: 100px;
+}
+.header_left{
+    width: 20px;
+    height: 20px;
+    background: url(../img/back.png) no-repeat center;
+    display: inline-block;
+    float: left;
+    margin: 10px 5px 10px 10px;
+}
+.header_back{
+    padding: 10px 0;
+    float: left;
+}
+.camera{
+    float: right;
+    margin: 8px 20px;
+}
+/**/
+.content{
+    margin-top: 40px;
+}
+.content li{
+    border-bottom: 1px solid #BFBFBF;
+}
+.head_icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.head{
+    padding: 5px 15px;
+}
+.head > img{
+    margin-top: -25px;
+}
+.head_info{
+    display: inline-block;
+    margin: 5px;
+}
+.head_info p{
+    font-size: 15px;
+}
+.head_info span{
+    font-size: 12px;
+}
+.pic{
+    padding: 0 15px;
+}
+.pic img{
+    /*width: 100%;*/
+    /*height: 200px;*/
+
+    width:32%;
+    height:100px;
+    margin: 2px 1px;
+    border: 1px solid #9d9d9d;
+}
+.txt_content{
+    font-size: 14px;
+    padding: 0 15px 5px;
+}
+.say_good{
+    padding: 5px;
+    height: 30px;
+}
+.say_good div{
+    float: right;
+    display: inline-block;
+    padding-right: 30px;
+}
+#say_num{
+    margin-right: 10px;
+}
+#good_num{
+    margin-right: 20px;
+}
+.say{
+    padding: 5px 15px;
+}
+.say_nickname{
+    font-size: 15px;
+}
+.say_content{
+    font-size: 14px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.say_input_box{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.say_input_div{
+    display: none;
+}
+.comment_ul li{
+    border: none;
+}

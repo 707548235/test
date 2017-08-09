@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的经验</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../css/mine_exep.css" rel="stylesheet">
+</head>
+<body>
+<div class="common_header bg_black">
+    <a href="javascript:history.go(-1)">
+        <div class="header_left"></div>
+        <span class="header_back color_white">返回</span>
+    </a>
+    <h4 class="header_title color_white h4">我的经验</h4>
+    <img src="../img/head_icon.png" class="camera">
+</div>
+
+<div class="content">
+    <p class="myExp">当前等级 ：LV <span id="nowL">0</span></p>
+    <div class="progress">
+        <div id="nowExp_box" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="250" style="width:1%">
+            <span id="nowExp">0</span>
+        </div>
+    </div>
+    <p class="myExp">距离下一等级经验 ：<span id="lessExp">90</span></p>
+    <button class="btn btn-default btn-info" id="goExp">去赚经验</button>
+</div>
+<!-- js -->
+<!--<script src="../lib/zepto-1.2.0.js"></script>-->
+<script src="../lib/jquery-3.1.1.min.js"></script>
+<!--<script src="../lib/bootstrap/js/bootstrap.min.js"></script>-->
+<!--<script src="../lib/zepto-touch.js"></script>-->
+<script src="../js/mine_exep.js"></script>
+</body>
+</html>

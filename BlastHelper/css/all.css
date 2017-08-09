@@ -1,0 +1,82 @@
+/*颜色*/
+.color_blue{
+    color:#2689BC;
+}
+.color_blue_2{
+    color:#046FD3;
+}
+.color_black{
+    color:#000000;
+}
+.color_black_2{
+    color:#3D3D3D;
+}
+.color_black_3{
+    color: #343434;
+}
+.color_gray{
+    color: #9B9B9B;
+}
+.color_gray_2{
+    color:#AFAFAF;
+}
+.color_gray_3{
+    color: #BFBFBF;
+}
+.color_gray_4{
+    color:#9D9D9D;
+}
+.color_gray_5{
+    color:#7B7B7B;
+}
+.color_gray_6{
+    color:#CCCCCC;
+}
+.color_gray_7{
+    color:#8D8C8C;
+}
+.color_gray_8{
+    color:#323232;
+}
+.color_white{
+    color: #ffffff;
+}
+
+/*背景颜色*/
+.bg_gray{
+    background-color: #f0f4f7;
+}
+.bg_gray_2{
+    background-color: #EDEEF0;
+}
+.bg_white{
+    background-color: #ffffff;
+}
+.bg_red{
+    background-color: #ff0000;
+}
+.bg_black{
+    background-color: #27262B;
+}
+.bg_blue{
+    background-color: #046FD3;
+}
+/*字体粗细*/
+.font_bold{
+    font-weight: bold;
+}
+/*清浮动*/
+.clear :after{
+    content: '';
+    overflow: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+.clear {
+    zoom: 1;
+}
+sub,sup{
+    font-size: 10px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>爆破飞石计算</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../css/vibrate.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+</head>
+<body>
+<div class="common_header bg_black">
+    <a href="javascript:history.go(-1);">
+        <div class="header_left"></div>
+        <span class="header_back color_white">返回</span>
+    </a>
+    <h4 class="header_title color_white h4">爆破飞石</h4>
+</div>
+<div>
+    <p class="title color_blue_2">飞散物安全允许距离</p>
+    <div class="formula_box">
+        <p class="formula">R<sub>F</sub> = 0.8d</p>
+    </div>
+    <div class="input_container">
+        <div class="input_box clear">
+            <span class="labels color_white">d</span>
+            <div class="input">
+                <input id="val_d" type="number" name="val_d" class="input_ctro" placeholder="(mm)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
+            </div>
+        </div>
+        <div class="input_box clear">
+            <span class="labels color_white" style="font-size: 18px;">R<sub>F</sub></span>
+            <div class="input" contenteditable="false" id="input_r">
+                <!--<img src="../img/count_right.png" class="c_right_img" id="c_5_img">-->
+                <span id="result_r"> (m)</span>
+                <div class="equals_box"><span class="equals color_white">=</span></div>
+            </div>
+        </div>
+    </div>
+    <p class="title color_blue_2">飞石距离</p>
+    <div class="formula_box">
+        <p class="formula">S = K<sub>1</sub>K<sub>2</sub>(d<sup>3</sup>/8W<sup>3</sup>)x10<sup>-2</sup></p>
+    </div>
+    <div class="input_box clear" id="box_k1">
+        <span class="labels color_white" style="font-size: 18px">K<sub>1</sub></span>
+        <div class="input">
+            <input id="val_k1" type="number" name="val_k1" class="input_ctro" maxlength="15" placeholder="0.3~2.0" oninput="if(value.length>15)value=value.slice(0,15)">
+            <!--<img src="../img/count_right.png" class="c_right_img" id="c_3_img">-->
+        </div>
+    </div>
+    <div class="input_box clear" id="box_k2">
+        <span class="labels color_white" style="font-size: 18px">K<sub>2</sub></span>
+        <div class="input">
+            <input id="val_k2" type="number" name="val_k2" class="input_ctro" placeholder="0.3~2.0(m)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
+            <!--<img src="../img/count_right.png" class="c_right_img" id="c_4_img">-->
+        </div>
+    </div>
+    <div class="input_box clear">
+        <span class="labels color_white">W</span>
+        <div class="input">
+            <input id="val_w" type="number" name="val_w" class="input_ctro" placeholder="(m)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
+        </div>
+    </div>
+    <div class="input_box clear">
+        <div class="result_box">
+            <span class="labels_3 color_white">S</span>
+        </div>
+
+        <div class="input" contenteditable="false" id="input_s">
+            <!--<img src="../img/count_right.png" class="c_right_img" id="c_5_img">-->
+            <span id="result_s"> (m)</span>
+            <div class="equals_box"><span class="equals color_white">=</span></div>
+        </div>
+    </div>
+</div>
+<!-- js-->
+<script src="../lib/zepto-1.2.0.js"></script>
+<script src="../lib/layer_mobile/layer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/count_7_3.js"></script>
+</body>
+</html>

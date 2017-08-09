@@ -1,0 +1,204 @@
+/*公共头部分未提取*/
+.common_header{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+}
+.header_title{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    right: 70px;
+    line-height: 24px;
+}
+.common_header a{
+    display: block;
+    width: 100px;
+}
+.header_left{
+    width: 20px;
+    height: 20px;
+    background: url(../img/back.png) no-repeat center;
+    display: inline-block;
+    float: left;
+    margin: 11px 5px 10px 10px;
+}
+.header_back{
+    padding: 10px 0;
+    float: left;
+    line-height: 24px;
+}
+/*content*/
+.title{
+    margin: 15px;
+}
+.formula_box{
+    text-align: center;
+}
+.formula{
+    font-size: 25px;
+    margin: 20px 10px;
+}
+.input_container{
+    margin-bottom: 15px;
+}
+.input{
+    position: relative;
+    z-index: 100;
+    width: 80%;
+    height: 35px;
+    border: 1px solid #046FD3;
+    float: left;
+    font-size: 15px;
+    line-height: 34px;
+}
+.input_ctro{
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    display: inline-block;
+    height: 32px;
+    padding-left: 5px;
+}
+.labels {
+    padding: 0 16px;
+    background-color: #046FD3;
+    font-size: 22px;
+    line-height: 35px;
+    float: left;
+    display: inline-block;
+    width: 46px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+.result_box{
+    display: inline-block;
+    width: 46px;
+    text-align: center ;
+    float: left;
+    padding: 3px 0 1px;
+    background-color: #046FD3;
+}
+.labels_2{
+    padding: 2px 3px 8px;
+    background-color: #046FD3;
+    font-size: 18px;
+    float: left;
+    display: inline-block;
+    width: 46px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+.labels_3{
+    font-size: 18px;
+    display: inline-block;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+.equals_box{
+    display: inline-block;
+    position:absolute;
+    top: -1px;
+    right: -1px;
+    bottom:-1px;
+    z-index: 101;
+    height: 35px;
+    background-color: #CA353f;
+}
+.equals{
+    padding: 0 15px;
+    background-color: #CA353f;
+    font-size: 22px;
+    line-height: 31px;
+    float: right;
+    border: 1px solid #CA353f;
+}
+.input_box{
+    margin: 15px;
+    width: 90%;
+}
+.c_right_img{
+    padding: 5px 15px;
+    float: right;
+}
+/*清浮动*/
+.clear:after{
+    content: '';
+    overflow: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+
+/*滑动条*/
+.scroll{
+    width: 150px;
+    height: 40px;
+    background: #2b2b2b;
+    position: absolute;
+    right: 10px;
+    z-index: 200;
+    display: none;
+}
+.scroll_count_sub{
+    background: #FF5555;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 23px;
+    width: 20px;
+    padding: 0;
+    margin: 8px 2px;
+    text-align: center;
+}
+.scroll_count_add{
+    background: #FF5555;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 23px;
+    width: 20px;
+    padding: 0;
+    margin: 8px 0;
+    position: absolute;
+    right: 2px;
+    text-align: center;
+}
+.sign{
+    font-weight: bold;
+}
+.scroll_count{
+    float: right;
+}
+.scroll_num{
+    color: #FFFFFF;
+}
+.scroll_middle{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+.scroll_cro{
+    color: #FFFFFF;
+    background: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+}
+.scroll_white{
+    position: relative;
+    width: 100px;
+    height: 2px;
+    background: white;
+}
+.scroll_red{
+    width: 50%;
+    height: 2px;
+    background: #FF5555;
+}
+.scroll_max{
+    float: right;
+}

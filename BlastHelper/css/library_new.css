@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*搜索公共未提取*/
+.common_header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    padding: 9px 30px;
+    height: 44px;
+}
+.common_header .search{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    background: #EDEEF0;
+    padding: 4px;
+    color: #BFBFBF;
+    font-size: 12px;
+}
+
+/*底部导航栏未提取*/
+.nav_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 60px;
+    border-top: 1px solid #D1D1D1;
+}
+.nav_bottom_ul{
+    text-align: center;
+    padding: 5px;
+}
+.nav_bottom li{
+    float: left;
+    display: inline-block;
+    width: 33%;
+}
+.nav_bottom img{
+    display: inline-block;
+}
+.nav_bottom_txt{
+    font-size: 10px;
+    margin-top:7px;
+}
+.nav_bottom_ul img{
+    margin-top: 4px;
+}
+/**/
+.nav_box{
+    margin-top: 50px;
+    text-align: center;
+    padding:1px 10px;
+    width: 100%;
+    overflow: auto;
+    border-bottom: 1px solid #9B9B9B;
+}
+/*隐藏滚动条，兼容不好*/
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    background-color: rgba(0,0,0,0);
+}
+.nav_bar_ul{
+    width: 200%;
+}
+.nav_box li{
+    margin-top: 10px;
+    text-overflow: ellipsis;
+}
+.nav_bar{
+    float: left;
+    width: 12.5%;
+    /*width:25%;*/
+    font-size: 16px;
+}
+.nav_bar span{
+    border-bottom:2px solid #ffffff;
+}
+.items{
+    margin-top: 15px;
+}
+.item_li{
+    background-color: #ffffff;
+    border-bottom: 1px solid #C7C7C7;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.right{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/defused_right.png) no-repeat center;
+    float: right;
+}
+

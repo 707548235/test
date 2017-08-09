@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的信息</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../css/mine_info.css" rel="stylesheet">
+</head>
+<body class="bg_gray">
+    <div class="common_header bg_black">
+        <a href="../view/mine.html" class="clear">
+            <div class="header_left"></div>
+            <span class="header_back color_white">我</span>
+        </a>
+        <h4 class="header_title color_white h4">个人信息</h4>
+    </div>
+    <div>
+        <div class="headerImg bg_white">
+            <span class="color_black">头像</span>
+            <canvas id="photo" style="display: none;"></canvas>
+            <img src="" id="header_icon">
+            <div class="right"></div>
+        </div>
+        <!-- 隐藏上传图片，通过js点击事件激活-->
+        <div style="display: none">
+            <form name="formHead" method="post" action="" id="formHead" enctype="multipart/form-data" target="uploadfrm">
+                <input type="file" name="file_head" id="file_head" onchange="javascript:setImagePreview();" />
+            </form>
+        </div>
+        <div>
+            <ul class="list">
+                <li>
+                   <a href="mine_change_info.html">
+                       <div class="info_li">
+                           <span class="info_name color_black">昵称</span><span class="color_gray_4 info_data" id="nickname"></span><div class="right"></div>
+                       </div>
+                   </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <div class="info_li">
+                            <span class="info_name color_black">账号</span><span class="color_gray_4 info_data" id="username"></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mine_change_info.html">
+                        <div class="info_li">
+                            <span class="info_name color_black">性别</span><span class="color_gray_4 info_data" id="sex"></span><div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mine_change_info.html">
+                        <div class="info_li">
+                            <span class="info_name color_black">地区</span><span class="color_gray_4 info_data" id="address"></span><div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mine_change_info.html">
+                        <div class="info_li">
+                            <span class="info_name color_black">个性签名</span><span class="color_gray_4 info_data" id="sign"></span><div class="right"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="../lib/zepto-1.2.0.js"></script>
+    <script src="../lib/zepto-touch.js"></script>
+    <script src="../lib/layer_mobile/layer.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/mine_info.js"></script>
+    <script src="../js/mine_camera.js"></script>
+</body>
+</html>

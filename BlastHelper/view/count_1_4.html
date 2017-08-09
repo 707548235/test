@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>爆破方案</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../css/count.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+</head>
+<body>
+<div class="common_header bg_black">
+    <a href="javascript:history.go(-1);">
+        <div class="header_left"></div>
+        <span class="header_back color_white">返回</span>
+    </a>
+    <h4 class="header_title color_white h4">爆破方案</h4>
+</div>
+<div>
+    <p class="title color_blue_2">爆破区域AxC</p>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>A</span>
+                </div>
+                <div class="input">
+                    <input id="val_a1" class="val" type="number" name="val_a1" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>C</span>
+                </div>
+                <div class="input">
+                    <input id="val_a2" class="val" type="number" name="val_a2" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">炮孔数量N</p>
+    <div class="formula_box">
+        <p class="formula">N = AC/ab</p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>a</span>
+                </div>
+                <div class="input">
+                    <input id="val_b1" class="val" type="number" name="val_b1" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>b</span>
+                </div>
+                <div class="input">
+                    <input id="val_b2" class="val" type="number" name="val_b2" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">N</span>
+                </div>
+                <div class="result" id="result_b">
+                    <input id="val_b3" class="val" type="text" name="val_b3" class="input_ctro" placeholder="" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">单孔负担岩石体积</p>
+    <div class="formula_box">
+        <p class="formula">V<sub>R</sub> = Hab</p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>H</span>
+                </div>
+                <div class="input">
+                    <input id="val_c1" class="val" type="number" name="val_c1" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">V<sub>R</sub></span>
+                </div>
+                <div class="result" id="result_c">
+                    <input id="val_c2" class="val" type="text" name="val_c2" class="input_ctro" placeholder="(m3)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <p class="title color_blue_2">爆破总体积</p>
+    <div class="formula_box">
+        <p class="formula">V = NV<sub>R</sub></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">V</span>
+                </div>
+                <div class="result" id="result_d">
+                    <input id="val_d1" class="val" type="text" name="val_d1" class="input_ctro" placeholder="(m3)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">爆破总吨数</p>
+    <div class="formula_box">
+        <p class="formula">T = Vρ<sub>r</sub></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box" id="box_e1">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>ρ<sub>r</sub></span>
+                </div>
+                <div class="input">
+                    <input id="val_e1" class="val" type="number" name="val_e1" class="input_ctro" placeholder="1.0~4.0" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">T</span>
+                </div>
+                <div class="result" id="result_e">
+                    <input id="val_e2" class="val" type="text" name="val_e2" class="input_ctro" placeholder="(T)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">实际炸药单位消耗量</p>
+    <div class="formula_box">
+        <p class="formula">q<sub>0</sub> = M<sub>L</sub>/V<sub>R</sub></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>M<sub>L</sub></span>
+                </div>
+                <div class="input">
+                    <input id="val_f1" class="val" type="number" name="val_f1" class="input_ctro" placeholder="(kg)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">q<sub>0</sub></span>
+                </div>
+                <div class="result" id="result_f">
+                    <input id="val_f2" class="val" type="text" name="val_f2" class="input_ctro" placeholder="(kg/m3)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- js-->
+<script src="../lib/zepto-1.2.0.js"></script>
+<script src="../lib/layer_mobile/layer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/count_1_4.js"></script>
+</body>
+</html>

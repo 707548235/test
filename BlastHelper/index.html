@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>爆破助手</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="lib/layer_mobile/need/layer.css">
+</head>
+<body>
+    <div>
+        <div class="app_icon">
+            <img src="img/ic_launcher.png" class="icon">
+        </div>
+    </div>
+    <!--<div class="login_register">-->
+        <!--<a href="javascript:" id="login"><span class="color_blue login_txt">登录</span></a>-->
+        <!--<a href="javascript:" id="register"><span class="color_gray register_txt ">注册</span></a>-->
+    <!--</div>-->
+    <div id="post_info">
+        <form action="javascript:void(0)" method="post" id="login_form">
+            <div class="form_login">
+                <div class="username_box">
+                    <!--<img src="img/login_user.png"> -->
+                    <input id="username" class="color_gray " type="text" name="username" placeholder="邮箱" maxlength="25">
+                </div>
+                <div class="password_box">
+                    <!--<img src="img/login_password.png"> -->
+                    <input id="password" class="color_gray" type="password" name="password" placeholder="密码" maxlength="10">
+                </div>
+                <div id="login_btn">
+                    <img src="img/login_btn.png" id="login_btn_img">
+                    <!--<button class="btn" id="login_btn" type="button" style="background:url(img/login_btn.png)">登录</button>-->
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="register_new">
+        <a href="view/register_new.html" class="register">
+            注册
+        </a>
+        <a href="view/forget_password.html" class="forget_pwd">忘记密码?</a>
+    </div>
+    <!--<div>-->
+        <!--<div class="quick_login">-->
+            <!--<div class="line"></div>-->
+            <!--<span class="color_gray_2">其他方式快速登录</span>-->
+            <!--<div class="line"></div>-->
+        <!--</div>-->
+        <!--<div class="quick_img">-->
+            <!--<a href="javascript:"><img src="img/login_q.png"></a>-->
+            <!--<a href="javascript:"><img src="img/login_wx.png"></a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!-- js -->
+    <script src="lib/zepto-1.2.0.js"></script>
+    <script src="lib/layer_mobile/layer.js"></script>
+    <script src="lib/zepto-touch.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

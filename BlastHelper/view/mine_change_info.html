@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>修改信息</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+    <link href="../css/mine_change_info.css" rel="stylesheet">
+</head>
+<body class="bg_gray">
+    <div >
+        <div class="common_header bg_black">
+            <a href="javascript:history.go(-1);" class="clear">
+                <div class="header_left"></div>
+                <span class="header_back color_white">返回</span>
+            </a>
+            <h4 class="header_title color_white h4">修改个人信息</h4>
+        </div>
+        <div class="form_info">
+            <form action="/" method="post">
+                <div class="input-group input_box">
+                    <span class="input-group-addon">昵称</span>
+                    <input type="text" name="nickname" id="nickname" class="form-control" maxlength="10">
+                </div>
+                <div class="input-group input_box">
+                    <span class="input-group-addon">性别</span>
+                    <div class="form-control">
+                        <input type="radio" name="sex" value="man" id="man"  style="margin-left: 15px">男
+                        <input type="radio" name="sex" value="woman" id="woman" style="margin-left: 15px" checked>女
+                    </div>
+                </div>
+                <div class="input-group input_box">
+                    <span class="input-group-addon">地区</span>
+                    <input type="text" name="area" id="area" class="form-control" maxlength="15">
+                </div>
+                <div class="input-group input_box">
+                    <span class="input-group-addon" >个性签名</span>
+                    <textarea name="ownSign" id="ownSign" class="form-control" maxlength="100" rows="3" placeholder="说点什么吧！"></textarea>
+                </div>
+                <div style="text-align: center;margin-top: 30px;">
+                    <button type="button" class="btn btn-primary" id="change_ok">确认修改</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<!-- js -->
+    <script src="../lib/zepto-1.2.0.js"></script>
+    <script src="../lib/layer_mobile/layer.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/mine_change_info.js"></script>
+</body>
+</html>

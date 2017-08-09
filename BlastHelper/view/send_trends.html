@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>发表动态</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+    <link href="../css/send_trends.css" rel="stylesheet">
+</head>
+<body>
+    <div class="common_header bg_black">
+        <a href="javascript:history.go(-1)" id="back">
+            <div class="header_left"></div>
+            <span class="header_back color_white">返回</span>
+        </a>
+        <h4 class="header_title color_white h4">发表动态</h4>
+        <span class="camera color_white" id="send">发表</span>
+    </div>
+    <div class="trends_box">
+        <textarea class="trends_txt" placeholder="说点什么吧" maxlength="100"></textarea>
+        <div class="clear">
+            <div >
+                <button class="btn btn-info" id="addImg">添加图片</button>
+            </div>
+            <img src="" class="upload_img" id="header_icon1">
+            <canvas id="photo" style="display: none;"></canvas>
+            <img src="" class="upload_img" id="header_icon2">
+            <img src="" class="upload_img" id="header_icon3">
+            <img src="" class="upload_img" id="header_icon4">
+            <img src="" class="upload_img" id="header_icon5">
+            <img src="" class="upload_img" id="header_icon6">
+            <img src="" class="upload_img" id="header_icon7">
+            <img src="" class="upload_img" id="header_icon8">
+            <img src="" class="upload_img" id="header_icon9">
+
+        </div>
+        <div style="display: none">
+            <form name="formHead" method="post" action="" id="formHead" enctype="multipart/form-data" target="uploadfrm">
+                <input type="file" name="file_head" id="file_head" onchange="javascript:setImagePreview();" />
+            </form>
+        </div>
+    </div>
+<!-- js -->
+<script src="../lib/zepto-1.2.0.js"></script>
+<script src="../lib/zepto-touch.js"></script>
+    <script src="../lib/layer_mobile/layer.js"></script>
+    <script src="../js/common.js"></script>
+<script src="../js/send_trends.js"></script>
+</body>
+</html>

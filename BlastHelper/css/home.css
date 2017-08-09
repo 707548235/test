@@ -1,0 +1,156 @@
+/*搜索公共未提取*/
+.common_header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    padding: 9px 30px;
+    height: 44px;
+}
+.common_header .search{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    background: #EDEEF0;
+    padding: 4px;
+    color: #BFBFBF;
+    font-size: 12px;
+}
+/*底部导航栏未提取*/
+.nav_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 60px;
+    border-top: 1px solid #D1D1D1;
+}
+.nav_bottom_ul{
+    text-align: center;
+    padding: 5px;
+}
+.nav_bottom li{
+    float: left;
+    display: inline-block;
+    width: 33%;
+}
+.nav_bottom img{
+    display: inline-block;
+}
+.nav_bottom_txt{
+     font-size: 10px;
+     margin-top:7px;
+ }
+.nav_bottom_ul img{
+    margin-top: 4px;
+}
+
+/*选项卡*/
+.home_tab{
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px;
+    margin-top: 50px;
+}
+.home_tab li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.home_tab a{
+    margin: 0;
+}
+.tab_img{
+    display: block;
+    margin: 10px auto;
+}
+.tab_head{
+    font-size: 10px;
+    color: #474747;
+    display: block;
+    margin-bottom: 10px;
+}
+/*爆破圈*/
+.blast_circle{
+    padding: 20px 15px 10px;
+}
+.into_blast{
+    margin-top: 10px;
+    padding: 5px;
+}
+.into_head{
+    width: 100px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+}
+.into_icon{
+    border: 1px solid #9d9d9d;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+}
+.into_head img:nth-child(1){
+    left: 0px;
+}
+.into_head img:nth-child(2){
+    left: 25px;
+}
+.into_head img:nth-child(3){
+    left: 50px;
+}
+.into_right{
+    float: right;
+    margin: 15px 10px;
+}
+.into_right span{
+    font-size: 14px;
+}
+.into_right span img{
+    margin-top: -3px;
+}
+/*滚动区*/
+.section_box{
+    padding:15px;
+}
+.content{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.content ul{
+    overflow: auto;
+}
+.content li{
+    border-bottom: 10px solid #EDEEF0;
+}
+.section_icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #9d9d9d;
+    border-radius: 50%;
+    margin: 5px;
+}
+.section_name{
+    margin: 5px;
+    font-size: 14px;
+}
+.section_image{
+    width: 100%;
+    height: 150px;
+}
+.section_p_1{
+    font-size: 15px;
+    margin: 5px;
+}
+.section_p_2{
+    font-size: 14px;
+    margin: 5px;
+}

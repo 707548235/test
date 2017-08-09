@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">-
+    <meta charset="UTF-8">
+    <title>光面/预裂爆破</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../css/count.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+</head>
+<body>
+<div class="common_header bg_black">
+    <a href="javascript:history.go(-1);">
+        <div class="header_left"></div>
+        <span class="header_back color_white">返回</span>
+    </a>
+    <h4 class="header_title color_white h4">光面/预裂爆破</h4>
+</div>
+<div>
+    <p class="title color_blue_2">不耦合系数</p>
+    <div class="formula_box">
+        <p class="formula">D = d / d<sub>e</sub></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>d</span>
+                </div>
+                <div class="input">
+                    <input id="val_a1" class="val" type="number" name="val_a1" class="input_ctro" placeholder="(mm)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>d<sub>e</sub></span>
+                </div>
+                <div class="input">
+                    <input id="val_a2" class="val" type="number" name="val_a2" class="input_ctro" placeholder="(mm)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">D</span>
+                </div>
+                <div class="result" id="result_a">
+                    <input id="val_a3" class="val" type="text" name="val_a3" class="input_ctro" placeholder="" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">炮孔间距</p>
+    <div class="formula_box">
+        <p class="formula">E = (8~18)dx10<sup>-3</sup><p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box" id="box_b1">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>系数</span>
+                </div>
+                <div class="input">
+                    <input id="val_b1" class="val" type="number" name="val_b1" class="input_ctro" placeholder="8~18" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">E</span>
+                </div>
+                <div class="result" id="result_b">
+                    <input id="val_b2" class="val" type="text" name="val_b2" class="input_ctro" placeholder="(m)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">光爆层厚度</p>
+    <div class="formula_box">
+        <p class="formula">W<sub>s</sub> = (10~12)dx10<sup>-3</sup></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box" id="box_c1">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>系数</span>
+                </div>
+                <div class="input">
+                    <input id="val_c1" class="val" type="number" name="val_c1" class="input_ctro" placeholder="10~12" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">W<sub>s</sub></span>
+                </div>
+                <div class="result" id="result_c">
+                    <input id="val_c2" class="val" type="text" name="val_c2" class="input_ctro" placeholder="(m)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">孔密集系数</p>
+    <div class="formula_box">
+        <p class="formula">m = E/W<sub>s</sub></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">m</span>
+                </div>
+                <div class="result" id="result_d">
+                    <input id="val_d1" class="val" type="text" name="val_d1" class="input_ctro" placeholder="" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- js-->
+<script src="../lib/zepto-1.2.0.js"></script>
+<script src="../lib/layer_mobile/layer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/count_2_3.js"></script>
+</body>
+</html>

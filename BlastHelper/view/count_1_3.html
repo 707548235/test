@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>装药参数</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../css/count.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
+</head>
+<body>
+<div class="common_header bg_black">
+    <a href="javascript:history.go(-1);">
+        <div class="header_left"></div>
+        <span class="header_back color_white">返回</span>
+    </a>
+    <h4 class="header_title color_white h4">装药参数</h4>
+</div>
+<div>
+    <p class="title color_blue_2">填塞长度h<sub>0</sub></p>
+    <div class="formula_box">
+        <p class="formula">h<sub>0</sub> = (0.7~1.0)W<sub>1</sub></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box" id="bxo_a1">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>系数</span>
+                </div>
+                <div class="input">
+                    <input id="val_a1" class="val" type="number" name="val_a1" class="input_ctro" placeholder="0.7~1.0" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>W<sub>1</sub></span>
+                </div>
+                <div class="input">
+                    <input id="val_a2" class="val" type="number" name="val_a2" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">h<sub>0</sub></span>
+                </div>
+                <div class="result" id="result_a">
+                    <input id="val_a3" class="val" type="text" name="val_a3" class="input_ctro" placeholder="(m3)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="formula_box">
+        <p class="formula">h<sub>0</sub> = (20~30)dx10<sup>-3</sup></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box" id="box_b1">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>系数</span>
+                </div>
+                <div class="input">
+                    <input id="val_b1" class="val" type="number" name="val_b1" class="input_ctro" placeholder="20~30" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>d</span>
+                </div>
+                <div class="input">
+                    <input id="val_b2" class="val" type="number" name="val_b2" class="input_ctro" placeholder="(mm)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">h<sub>0</sub></span>
+                </div>
+                <div class="result" id="result_b">
+                    <input id="val_b3" class="val" type="text" name="val_b3" class="input_ctro" placeholder="(m)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">装药长度</p>
+    <div class="formula_box">
+        <p class="formula">L = h-h<sub>0</sub></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>h</span>
+                </div>
+                <div class="input">
+                    <input id="val_c1" class="val" type="number" name="val_c1" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">L</span>
+                </div>
+                <div class="result" id="result_c">
+                    <input id="val_c2" class="val" type="text" name="val_c2" class="input_ctro" placeholder="(m)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">填塞物料粒度n</p>
+    <div class="formula_box">
+        <p class="formula">n = 0.1d</p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">n</span>
+                </div>
+                <div class="result" id="result_d">
+                    <input id="val_d1" class="val" type="text" name="val_d1" class="input_ctro" placeholder="(mm)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">每个炮孔的装药体积</p>
+    <div class="formula_box">
+        <p class="formula">V<sub>L</sub> = πd<sup>2</sup>/(4L)x10<sup>-6</sup></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">V<sub>L</sub></span>
+                </div>
+                <div class="result" id="result_e">
+                    <input id="val_e1" class="val" type="text" name="val_e1" class="input_ctro" placeholder="(m3)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">每个炮孔的装药质量</p>
+    <div class="formula_box">
+        <p class="formula">M<sub>L</sub> = V<sub>L</sub>ρ<sub>e</sub>x10<sup>3</sup></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>ρ<sub>e</sub></span>
+                </div>
+                <div class="input">
+                    <input id="val_f1" class="val" type="number" name="val_f1" class="input_ctro" placeholder="(g/cm3)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">M<sub>L</sub></span>
+                </div>
+                <div class="result" id="result_f">
+                    <input id="val_f2" class="val" type="text" name="val_f2" class="input_ctro" placeholder="(kg)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <p class="title color_blue_2">第一排孔单孔装药量</p>
+    <div class="formula_box">
+        <p class="formula">Q<sub>1</sub> = qaW<sub>1</sub>H</p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>q</span>
+                </div>
+                <div class="input">
+                    <input id="val_g1" class="val" type="number" name="val_g1" class="input_ctro" placeholder="(kg/m3)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>a</span>
+                </div>
+                <div class="input">
+                    <input id="val_g2" class="val" type="number" name="val_g2" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>W<sub>1</sub></span>
+                </div>
+                <div class="input">
+                    <input id="val_g3" class="val" type="number" name="val_g3" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>H</span>
+                </div>
+                <div class="input">
+                    <input id="val_g4" class="val" type="number" name="val_g4" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">Q<sub>1</sub></span>
+                </div>
+                <div class="result" id="result_g">
+                    <input id="val_g5" class="val" type="text" name="val_g5" class="input_ctro" placeholder="(kg)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">第二排起单孔装药量</p>
+    <div class="formula_box">
+        <p class="formula">Q<sub>2</sub> = (1.1~1.2)qabH</p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="input_box" id="box_h1">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>系数</span>
+                </div>
+                <div class="input">
+                    <input id="val_h1" class="val" type="number" name="val_h1" class="input_ctro" placeholder="1.10~1.20" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="input_box">
+                <div class="input_label" style="padding: 5px 0">
+                    <span>b</span>
+                </div>
+                <div class="input">
+                    <input id="val_h2" class="val" type="number" name="val_h2" class="input_ctro" placeholder="(m)" maxlength="5" oninput="if(value.length>15)value=value.slice(0,15)">
+                </div>
+            </div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">Q<sub>2</sub></span>
+                </div>
+                <div class="result" id="result_h">
+                    <input id="val_h3" class="val" type="text" name="val_h3" class="input_ctro" placeholder="(kg)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="title color_blue_2">理论装药密度</p>
+    <div class="formula_box">
+        <p class="formula">△ = (4Q<sub>2</sub>/(πd<sup>2</sup>L)) x10<sup>6</sup></p>
+    </div>
+    <div class="input_container clear">
+        <div>
+            <div class="result_box">
+                <div class="result_label">
+                    <span class="result_label color_white">△</span>
+                </div>
+                <div class="result" id="result_i">
+                    <input id="val_i1" class="val" type="text" name="val_i1" class="input_ctro" placeholder="(kg/m3)" maxlength="5">
+                    <div class="equals_box">
+                        <span class="equals color_white">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- js-->
+<script src="../lib/zepto-1.2.0.js"></script>
+<script src="../lib/layer_mobile/layer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/count_1_3.js"></script>
+</body>
+</html>
