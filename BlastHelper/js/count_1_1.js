@@ -15,7 +15,8 @@ $(function () {
         } else if(b<2.0||b>3.0){
             countShake("#box_a3","b取值范围2.0~3.0");
         }else{
-            w1 = parseFloat(h/Math.tan(a) + b);
+            //Math三角函数参数是弧度，弧度=角度*π/180
+            w1 = parseFloat(h/Math.tan(a*Math.PI/180) + b);
             $("#val_a4").val(w1.toFixed(2));
         }
     });

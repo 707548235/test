@@ -6,17 +6,17 @@ $(function () {
     $(".control").hide();
     $("#all").show();
     //展开全部
-    $("#all").tap(function () {
+    $("#all").click(function () {
         $(".control").show();
         $("#all").hide();
     });
     //收起
-    $("#simple").tap(function () {
+    $("#simple").click(function () {
         $(".control").hide();
         $("#all").show();
     });
     //爆破圈
-    $("#b_circle").tap(function(){
+    $("#b_circle").click(function(){
         sessionStorage.setItem("inUrl",blastCircleUrl);
         sessionStorage.setItem("inFlag","1");
     });

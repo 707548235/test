@@ -19,7 +19,7 @@ $(function () {
     $("#result_b").click(function () {
         K = $("#val_b1").val();
         d = $("#val_b2").val();
-        flag = doFlag(K) || doFlag(D);
+        flag = doFlag(K) || doFlag(d);
         if(flag){
             layerDialog("请输入正确的值！");
         } else if(K<30||K>40){

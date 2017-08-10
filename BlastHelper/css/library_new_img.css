@@ -1,36 +1,6 @@
 @charset "utf-8";
-/*公共头部分未提取*/
-.common_header{
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 44px;
-    overflow: hidden;
-}
-.header_title{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 70px;
-    right: 70px;
-    line-height: 24px;
-}
-.common_header a{
-    display: block;
-    width: 100px;
-}
-.header_left{
-    width: 20px;
-    height: 20px;
-    background: url(../img/back.png) no-repeat center;
-    display: inline-block;
-    float: left;
-    margin: 11px 5px 10px 10px;
-}
-.header_back{
-    padding: 10px 0;
-    float: left;
-    line-height: 24px;
+.content{
+    margin-top: 50px;
 }
 /*content*/
 img{

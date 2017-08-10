@@ -65,6 +65,9 @@
 .font_bold{
     font-weight: bold;
 }
+.chinese_font{
+    font-size: 16px;
+}
 /*清浮动*/
 .clear :after{
     content: '';
@@ -80,3 +83,80 @@
 sub,sup{
     font-size: 10px;
 }
+/*公共头部分*/
+.common_header{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 44px;
+    z-index: 300;
+}
+.common_header .search{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    background: #EDEEF0;
+    padding: 4px;
+    color: #BFBFBF;
+    font-size: 12px;
+}
+.header_title{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    right: 70px;
+}
+.common_header a{
+    display: block;
+    width: 100px;
+}
+.header_left{
+    width: 20px;
+    height: 20px;
+    background: url(../img/back.png) no-repeat center;
+    display: inline-block;
+    float: left;
+    margin: 10px 5px 10px 10px;
+}
+.header_back{
+    padding: 10px 0;
+    float: left;
+}
+.camera{
+    float: right;
+    margin: 8px 20px;
+}
+/*底部导航栏*/
+.nav_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 60px;
+    border-top: 1px solid #D1D1D1;
+}
+.nav_bottom_ul{
+    text-align: center;
+    padding: 5px;
+}
+.nav_bottom li{
+    float: left;
+    display: inline-block;
+    width: 33%;
+}
+.nav_bottom img{
+    display: inline-block;
+}
+.nav_bottom_txt{
+    font-size: 10px;
+    margin-top:7px;
+}
+.nav_bottom_ul img{
+    margin-top: 4px;
+}
+

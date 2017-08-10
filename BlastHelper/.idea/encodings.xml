@@ -2,19 +2,6 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/css/count.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/css/library_item.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/css/library_item_2.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/css/library_item_3.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/css/library_item_4.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_1" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_2" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_3" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_4" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_5" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_6" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_7" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_8" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/data/json_all" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/blast_circle.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/common.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/count_4_2.js" charset="UTF-8" />
@@ -22,22 +9,13 @@
     <file url="file://$PROJECT_DIR$/js/forget_password.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/home.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/index.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/library.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/library_item.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/library_item_2.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/library_item_3.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/library_item_4.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/library_new.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/library_new_img.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/library_pdf.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/mine.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/mine_camera.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/mine_change_info.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/mine_exep.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/mine_good.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/mine_info.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/mine_say.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js/mine_trends.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/register_new.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/send_trends.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/vibrate_count.js" charset="UTF-8" />

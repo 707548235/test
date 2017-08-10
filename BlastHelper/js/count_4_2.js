@@ -8,7 +8,7 @@ $(function () {
     $("#result_a").on("click", function () {
         c1 = $("#val_a1").val();
         D = $("#val_a2").val();
-        flag = c1=="" || isNaN(c1) || D=="" || isNaN(D);
+        flag = doFlag(c1) || doFlag(D);
         if(flag){
             layerDialog("请输入正确的值");
         } else if(c1<0.5||c1>0.67){
@@ -21,7 +21,7 @@ $(function () {
     $("#result_b").on("click", function () {
         c2 = $("#val_b1").val();
         sita = $("#val_b2").val();
-        flag = c2=="" || isNaN(c2) || sita=="" || isNaN(sita);
+        flag = doFlag(c2) || doFlag(sita);
         if(flag){
             layerDialog("请输入正确的值");
         } else if(c2<1.5||c2>3.0){
@@ -33,7 +33,7 @@ $(function () {
     });
     $("#result_c").on("click", function () {
         c3 = $("#val_c1").val();
-        flag = c3=="" || isNaN(c3);
+        flag = doFlag(c3);
         if(flag){
             layerDialog("请输入正确的值");
         } else if(c3<0.67||c3>0.70){
@@ -45,10 +45,10 @@ $(function () {
     });
     $("#result_d").on("click", function () {
         c4 = $("#val_d1").val();
-        flag = c4=="" || isNaN(c4);
+        flag = doFlag(c4);
         if(flag){
             layerDialog("请输入正确的值");
-        } else if(c4<0.80||c4>01.50){
+        } else if(c4<0.80||c4>1.50){
             countShake("#box_d1","系数取值范围0.80~1.50");
         } else{
             a = c4*l;
@@ -57,10 +57,10 @@ $(function () {
     });
     $("#result_e").on("click", function () {
         c5 = $("#val_e1").val();
-        flag = c5=="" || isNaN(c5);
+        flag = doFlag(c5) || doFlag(a);
         if(flag){
             layerDialog("请输入正确的值");
-        } else if(c5<0.85||c5>0.67){
+        } else if(c5<0.85||c5>1){
             countShake("#box_e1","系数取值范围0.85~1.0");
         } else{
             b = c5*a;
@@ -69,7 +69,7 @@ $(function () {
     });
     $("#result_f").on("click", function () {
         q = $("#val_f1").val();
-        flag = q=="" || isNaN(q) || a=="" || isNaN(a) || b=="" || isNaN(b) || sita=="" || isNaN(sita);
+        flag = doFlag(q) || doFlag(a) || doFlag(b) || doFlag(sita);
         if(flag){
             layerDialog("请输入正确的值");
         } else{

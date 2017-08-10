@@ -37,7 +37,7 @@ $(function () {
        window.location.href = "send_trends.html";
     });
 
-//    点赞和评论
+//    点赞
     $("body").on("click",".good_box",function (ev) {
         goodIndex = $(this).parents("li").index();
         commenId = allData[goodIndex].commentId;
@@ -53,6 +53,7 @@ $(function () {
     //要评论
     $("body").on("click",".say_box",function (ev) {
         $(".say_input_div").show();
+        $("#say_input").focus();
         $("#say_input").val("");
         sayIndex = $(this).parents("li").index();
         ev.stopPropagation();
@@ -81,22 +82,32 @@ $(function () {
 });
 //回复评论
 function replyCallback(data){
-    var nickname = allData[sayIndex].commentUname;
-    $("#content_ul .out_li:eq("+sayIndex+") .say_num").html(allData[sayIndex].reply.length+1);
-    $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_gray_2"><span class="say_nickname color_blue">${nickname}：</span>${commentTxt}</p> </div></li>`);
-    allData[sayIndex].reply.push({"commentUname":commentTxt,"contentReply":nickname});
+    if(data.code == 1){
+        var nickname = allData[sayIndex].commentUname;
+        $("#content_ul .out_li:eq("+sayIndex+") .say_num").html(allData[sayIndex].reply.length+1);
+        $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_gray_2"><span class="say_nickname color_blue">${nickname}：</span>${commentTxt}</p> </div></li>`);
+        allData[sayIndex].reply.push({"commentUname":commentTxt,"contentReply":nickname});
+    } else {
+        layerDialog(data.msg);
+    }
+
 }
 //赞
 function goodCallback(data){
-    if(goodFlag == -1){
-        img.attr("src","../img/circle_good.png");
-        $("#content_ul .out_li:eq("+goodIndex+") .good_num").html(parseInt(allData[goodIndex].good)-1);
-        allData[goodIndex].good = parseInt(allData[goodIndex].good)-1
+    if(data.code == 1){
+        if(goodFlag == -1){
+            img.attr("src","../img/circle_good.png");
+            $("#content_ul .out_li:eq("+goodIndex+") .good_num").html(parseInt(allData[goodIndex].good)-1);
+            allData[goodIndex].good = parseInt(allData[goodIndex].good)-1
+        } else{
+            img.attr("src","../img/circle_good_pressed.png");
+            $("#content_ul .out_li:eq("+goodIndex+") .good_num").html(parseInt(allData[goodIndex].good)+1);
+            allData[goodIndex].good = parseInt(allData[goodIndex].good)+1;
+        }
     } else{
-        img.attr("src","../img/circle_good_pressed.png");
-        $("#content_ul .out_li:eq("+goodIndex+") .good_num").html(parseInt(allData[goodIndex].good)+1);
-        allData[goodIndex].good = parseInt(allData[goodIndex].good)+1;
+        layerDialog(data.msg);
     }
+
 }
 //获取动态
 function circleCallback(mydata){
@@ -152,7 +163,7 @@ function circleCallback(mydata){
                 </div>
                 <div class="say_good clear">
                 <div class="good_box">
-                <img src="../img/circle_good_pressed.png">&nbsp;<span class="good_num">${data[i].good}</span>
+                <img src="../img/circle_good_pressed.png">&nbsp;<span class="good_num">${data[i].good==null?0:data[i].good}</span>
                 </div>
                 <div class = say_box>
                 <img src="../img/circle_say.png">&nbsp;<span class="say_num">${data[i].reply.length}</span>
@@ -164,7 +175,7 @@ function circleCallback(mydata){
                 </div>
                 <div class="say_good clear">
                 <div class="good_box">
-                <img src="../img/circle_good.png">&nbsp;<span class="good_num">${data[i].good}</span>
+                <img src="../img/circle_good.png">&nbsp;<span class="good_num">${data[i].good==null?0:data[i].good}</span>
                 </div>
                 <div class = say_box>
                 <img src="../img/circle_say.png">&nbsp;<span class="say_num">${data[i].reply.length}</span>

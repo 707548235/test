@@ -43,13 +43,13 @@ $(function () {
     });
     $("#result_d").click(function () {
         p = $("#val_d1").val();
-        flag = doFlag(q) || doFlag(f) || doFlag(S);
+        flag = doFlag(p) || doFlag(f) || doFlag(S);
         if(flag){
             layerDialog("请输入正确的值");
         } else if(p<295||p>330){
             countShake("#box_d1","p取值范围295~330");
         }else{
-            q = 1.1*(525/q)*Math.pow(f/S,0.5);
+            q = 1.1*(525/p)*Math.pow(f/S,0.5);
             $("#val_d2").val(q.toFixed(2));
         }
     });
@@ -66,7 +66,7 @@ $(function () {
         de = $("#val_f1").val();
         c2 = $("#val_f2").val();
         pe = $("#val_f3").val();
-        flag = doFlag(de) || doFlag(c2) || doFlag(pe) || doFlag(pl) || doFlag(de);
+        flag = doFlag(de) || doFlag(c2) || doFlag(pe) || doFlag(lb);
         if(flag){
             layerDialog("请输入正确的值");
         } else if(c2<0.4||c2>0.8){

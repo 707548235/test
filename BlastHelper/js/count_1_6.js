@@ -23,15 +23,15 @@ $(function () {
         } else if(c4<0.24||c4>0.67){
             countShake("#box_a7","γ取值范围0.24~0.67");
         } else{
-            ql = K*c1*c2*Math.pow(a,c3)*Math(d/1000,c4);
-            $("#val_a3").val(ql.toFixed(2));
+            ql = K*c1*c2*Math.pow(a,c3)*Math.pow(d/1000,c4);
+            $("#val_a8").val(ql.toFixed(2));
         }
     });
 
     var de,pe,q2;
     var flag;
 
-    $("#result_a").click(function () {
+    $("#result_b").click(function () {
         de = $("#val_b1").val();
         pe = $("#val_b2").val();
         flag = doFlag(de) || doFlag(pe);
