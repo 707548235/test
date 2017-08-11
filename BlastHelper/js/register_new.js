@@ -66,12 +66,25 @@ $(function () {
             layerDialog("请再次输入密码");
             return;
         }
+        if(password.length<6 || rePwd.length<6){
+            layerDialog("密码不能少于6位");
+            return;
+        }
         if(password != rePwd){
             layerDialog("两次密码输入不一致");
             return;
         }
         return true;
     }
+    var rePwdInput = $("#rePwd");
+    var registerOk = $("#register_ok");
+    rePwdInput.keyup(function () {
+        if(rePwdInput.val().length < 6){
+            registerOk.css("background","rgba(9,140,229,0.25)");
+        } else {
+            registerOk.css("background","rgba(9,140,229,1)");
+        }
+    });
 });
 
 function registerCallback(data){

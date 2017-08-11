@@ -25,6 +25,8 @@
 }
 .info_name{
     font-size: 16px;
+    max-lines: 1;
+    text-overflow: ellipsis;
 }
 .info_li{
     padding: 10px 15px;

@@ -85,7 +85,7 @@ function replyCallback(data){
     if(data.code == 1){
         var nickname = allData[sayIndex].commentUname;
         $("#content_ul .out_li:eq("+sayIndex+") .say_num").html(allData[sayIndex].reply.length+1);
-        $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_gray_2"><span class="say_nickname color_blue">${nickname}：</span>${commentTxt}</p> </div></li>`);
+        $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_gray_2"><span class="say_nickname color_blue">${username}：</span>${commentTxt}</p> </div></li>`);
         allData[sayIndex].reply.push({"commentUname":commentTxt,"contentReply":nickname});
     } else {
         layerDialog(data.msg);

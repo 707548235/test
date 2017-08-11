@@ -4,45 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title>启动页入口</title>
-    <style rel="stylesheet" type="text/css">
-        .icon{
-            text-align: center;
-            margin-top: 100px;
-        }
-        .icon img{
-            width: 142px;
-            height: 205px;
-            margin: 0 auto;
-        }
-        p{
-            position: fixed;
-            bottom: 30px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            color: #3B4E5A;
-            font-size: 16px;
-        }
-    </style>
+    <!--<style rel="stylesheet" type="text/css">-->
+        <!--.icon{-->
+            <!--text-align: center;-->
+            <!--margin-top: 100px;-->
+        <!--}-->
+        <!--.icon img{-->
+            <!--width: 142px;-->
+            <!--height: 205px;-->
+            <!--margin: 0 auto;-->
+        <!--}-->
+        <!--p{-->
+            <!--position: fixed;-->
+            <!--bottom: 30px;-->
+            <!--left: 0;-->
+            <!--right: 0;-->
+            <!--text-align: center;-->
+            <!--color: #3B4E5A;-->
+            <!--font-size: 16px;-->
+        <!--}-->
+    <!--</style>-->
 </head>
 <body>
-    <div class="bg_white icon">
-        <img src="img/in.png" >
-    </div>
-    <p>京工博创(北京)科技有限公司</p>
+    <!--<div class="bg_white icon">-->
+        <!--<img src="img/in.png" >-->
+    <!--</div>-->
+    <!--<p>京工博创(北京)科技有限公司</p>-->
 
     <script>
-        window.onload = function () {
             var loginDate = localStorage.getItem("loginDate");
-            setTimeout(function () {
-                //本地没有数据或1个月以上没有登录
-                if(loginDate == null){
-                    window.location.href="index.html";
-                } else{
-                    window.location.href="view/home.html";
-                }
-            },2000);
-        }
+            //本地没有数据或1个月以上没有登录
+            if(loginDate == null){
+                window.location.href="index.html";
+            } else{
+                window.location.href="view/home.html";
+            }
     </script>
 </body>
 </html>

@@ -15,41 +15,41 @@ if(localStorage.getItem("randomCode") == null){
 }
 
 //登录
-var loginUrl = "http://192.168.1.119/thinkPhp/data/user_login.php";
+var loginUrl = "http://192.168.1.119/data/user_login.php";
 //注册
-var registerUrl = "http://192.168.1.119/thinkPhp/data/add.php";
+var registerUrl = "http://192.168.1.119/data/add.php";
 //我的界面获取所有信息
-var mineUrl = "http://192.168.1.119/thinkPhp/data/experience.php";
+var mineUrl = "http://192.168.1.119/data/experience.php";
 //发表动态
-var uploadUrl = "http://192.168.1.119/thinkPhp/data/experience.php";
+var uploadUrl = "http://192.168.1.119/data/experience.php";
 //主页获取三个最新动态头像
-var homeHeaderUrl = "http://192.168.1.119/thinkPhp/data/new_comment.php";
+var homeHeaderUrl = "http://192.168.1.119/data/new_comment.php";
 //修改个人信息
-var mineChangeInfoUrl = "http://192.168.1.119/thinkPhp/data/detailed_information.php";
+var mineChangeInfoUrl = "http://192.168.1.119/data/detailed_information.php";
 //爆破圈
-var blastCircleUrl = "http://192.168.1.119/thinkPhp/data/comment.php";//获取动态
+var blastCircleUrl = "http://192.168.1.119/data/comment.php";//获取动态
 //我的动态
-var mineTrends = "http://192.168.1.119/thinkPhp/data/my_comment.php";
+var mineTrends = "http://192.168.1.119/data/my_comment.php";
 //我的点赞
-var mineGood = "http://192.168.1.119/thinkPhp/data/my_comment.php";
+var mineGood = "http://192.168.1.119/data/my_comment.php";
 //我的评论
-var mineSay = "http://192.168.1.119/thinkPhp/data/my_comment.php";
+var mineSay = "http://192.168.1.119/data/my_comment.php";
 //赞
-var goodUrl = "http://192.168.1.119/thinkPhp/data/good.php";
+var goodUrl = "http://192.168.1.119/data/good.php";
 //回复
-var sayUrl = "http://192.168.1.119/thinkPhp/data/comment_reply.php";//评论
+var sayUrl = "http://192.168.1.119/data/comment_reply.php";//评论
 //我的信息
-var mineInfoUrl = "http://192.168.1.119/thinkPhp/data/gain_information.php";
+var mineInfoUrl = "http://192.168.1.119/data/gain_information.php";
 //上传,获取头像
-var headerUrl = "http://192.168.1.119/thinkPhp/data/img_base64.php";
+var headerUrl = "http://192.168.1.119/data/img_base64.php";
 //注册
-var registerUrl = "http://192.168.1.119/thinkPhp/data/add.php";
+var registerUrl = "http://192.168.1.119/data/add.php";
 //注册邮箱验证
-var regEmailCode = "http://192.168.1.119/thinkPhp/data/index.php";
+var regEmailCode = "http://192.168.1.119/data/index.php";
 //找回密码
-var forgetPwd = "http://192.168.1.119/thinkPhp/data/get_back_password.php";
+var forgetPwd = "http://192.168.1.119/data/get_back_password.php";
 //退出
-var exitUrl = "http://192.168.1.119/thinkPhp/data/user_login.php";
+var exitUrl = "http://192.168.1.119/data/user_login.php";
 //新闻资讯
 var newsUrl = "";
 

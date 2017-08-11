@@ -15,13 +15,41 @@ $(function () {
         $(".control").hide();
         $("#all").show();
     });
+    $(".count_check").click(function (e) {
+        if(username == null || username == ""){
+            layerDialog("需要先登录");
+            setTimeout(function () {
+                window.location.href = "../index.html";
+            },2000);
+            e.preventDefault();
+            return false;
+        }
+    });
+    //我的
+    $("#mine_link").click(function () {
+        if(username == null || username == ""){
+            layerDialog("需要先登录");
+            setTimeout(function () {
+                window.location.href = "../index.html";
+            },2000);
+            return;
+        }
+        window.location.href = "../view/mine.html";
+    });
     //爆破圈
     $("#b_circle").click(function(){
+        if(username == null || username == ""){
+            layerDialog("登录后才能看动态哦");
+            setTimeout(function () {
+               window.location.href = "../index.html";
+            },2000);
+            return;
+        }
         sessionStorage.setItem("inUrl",blastCircleUrl);
         sessionStorage.setItem("inFlag","1");
     });
     //获取最新三个动态头像
-    doAjax(ajaxType.doPost,homeHeaderUrl,{randomCode:randomCode},headCallback);
+    doAjax(ajaxType.doPost,homeHeaderUrl,{},headCallback);
     //最新资讯
     //doAjax(ajaxType.doPost,newsUrl,"",newsCallback);
 });

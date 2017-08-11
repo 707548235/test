@@ -7,6 +7,17 @@ $(function () {
     });
     var myData = {uname:username,randomCode:randomCode};
     doAjax(ajaxType.doPost,mineUrl,myData,mineCallback);
+    //我的
+    $("#mine_link").click(function () {
+        if(username == null || username == ""){
+            layerDialog("需要先登录");
+            setTimeout(function () {
+                window.location.href = "../index.html";
+            },2000);
+            return;
+        }
+        window.location.href = "../view/mine.html";
+    });
     $("#m_trends").click(function () {
         sessionStorage.setItem("inUrl",mineTrends);
         sessionStorage.setItem("inFlag","2");

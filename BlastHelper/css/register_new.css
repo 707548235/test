@@ -3,7 +3,7 @@
 .register_box{
     width: 100%;
     margin-top: 50px;
-    padding: 5px 15px;
+    padding: 5px 20px;
     font-size: 15px;
 
 }
@@ -16,9 +16,11 @@
 }
 #register_ok{
     width: 100%;
-    margin-top: 10px;
-    background-color: #098ce5;
-    border:1px solid #098ce5;
+    height: 46px;
+    margin-top: 16px;
+    background-color: rgba(9,140,229,0.25);
+    border:1px solid rgba(9,140,229,0.25);
+    font-size: 17px;
 }
 #code_btn{
     float: right;

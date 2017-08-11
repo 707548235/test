@@ -47,6 +47,15 @@ $(function () {
         $(".login_txt").removeClass("color_gray").addClass("color_blue");
         $("#post_info").html(loginCode);
     });
+    var pwd = $("#password");
+    var loginBtnImg = $("#login_btn_img");
+    $(pwd).keyup(function () {
+        if(pwd.val().length > 5){
+            loginBtnImg.attr("src","img/login_press_btn.png");
+        } else{
+            loginBtnImg.attr("src","img/login_btn.png");
+        }
+    })
     //验证码
     var timer;
     var count = 60;
@@ -71,7 +80,6 @@ $(function () {
 
     //验证用户名密码
     $("body").on("click","#login_btn",function () {
-        $("#login_btn_img").attr("src","img/login_press_btn.png");
         if(telCheck("用户名错误！","请输入密码！")){
             var myData = {uname:username,upwd:password,randomCode:randomCode};
             doAjax(ajaxType.doPost,loginUrl,myData,loginCallback);
@@ -91,7 +99,9 @@ $(function () {
         password = input_pwd.val();
         //var reg = new RegExp("^1[3|4|5|7|8][0-9]{9}$");
         var emailReg = new RegExp("^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$");
-        if(!emailReg.test(username)){
+        if(password.length < 6){
+            return false;
+        } else if(!emailReg.test(username)){
             layerDialog(errMsg_1);
         } else if(password.trim()==""){
             layerDialog(errMsg_2);

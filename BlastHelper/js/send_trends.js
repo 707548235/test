@@ -17,7 +17,7 @@ $(function () {
         $("#file_head").click();//除法隐藏input的onchange
     });
     //发表
-    $("#send").singleTap(function () {
+    $("#send").click(function () {
         var txt = $(".trends_txt").val();
         if(txt == ""){
             layerDialog("请输入动态文字！");

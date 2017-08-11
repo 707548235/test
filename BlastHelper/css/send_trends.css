@@ -8,22 +8,29 @@
 .trends_txt{
     padding: 5px;
     width: 100%;
-    height: 150px;
+    height: 100px;
     overflow: auto;
     font-size: 14px;
     resize: none;
-    border: 1px solid #AFAFAF;
-    text-indent: 1em;
+    border:none;
     letter-spacing: 2px;
 }
 #addImg{
-    float: right;
+    background: url("../img/add.png") center no-repeat;
+    width: 75px;
+    height: 75px;
+    border: none;
 }
 .upload_img{
-    width: 32%;
-    height: 130px;
-    margin-top: 5px;
+    width: 75px;
+    height: 75px;
+    margin: 5px 0;
     display: inline-block;
     visibility: hidden;
-    border: 1px solid #9d9d9d;
+}
+.upload_img :nth-child(2){
+    margin-left: 0;
+}
+.upload_img :nth-child(5){
+    margin-right: 0;
 }

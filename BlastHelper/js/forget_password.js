@@ -22,6 +22,14 @@ $(function () {
             doAjax(ajaxType.doPost,forgetPwd,{uname:email,validate:code,password:newPwd},forgetCallback);
         }
     });
+    var npwdInput = $("#newPwd");
+    npwdInput.keyup(function () {
+        if(npwdInput.val().length<6){
+            $("#next_btn").css("background","rgba(9,140,229,0.25)");
+        } else{
+            $("#next_btn").css("background","rgba(9,140,229,1)");
+        }
+    });
     $("#send_code").on("click",function(){
         email = $("#email").val();
         if(!emailReg.test(email)){
