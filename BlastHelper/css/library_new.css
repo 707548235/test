@@ -5,12 +5,12 @@
 }
 /**/
 .nav_box{
-    margin-top: 50px;
+    margin-top: 45px;
     text-align: center;
     padding:1px 10px;
     width: 100%;
     overflow: auto;
-    border-bottom: 1px solid #9B9B9B;
+    border-bottom: 1px solid #D1D1D1;
 }
 /*隐藏滚动条，兼容不好*/
 ::-webkit-scrollbar
@@ -21,6 +21,7 @@
 }
 .nav_bar_ul{
     width: 200%;
+    height: 41px;
 }
 .nav_box li{
     margin-top: 10px;
@@ -30,25 +31,30 @@
     float: left;
     width: 12.5%;
     /*width:25%;*/
-    font-size: 16px;
+    font-size: 15px;
 }
 .nav_bar span{
     border-bottom:2px solid #ffffff;
+}
+.underLine{
+    padding-bottom: 10px;
 }
 .items{
     margin-top: 15px;
 }
 .item_li{
     background-color: #ffffff;
-    /*border-bottom: 1px solid #C7C7C7;*/
-    padding: 10px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px;
     font-size: 15px;
 }
 .right{
-    width: 20px;
-    height: 20px;
     display: inline-block;
-    background: url(../img/defused_right.png) no-repeat center;
     float: right;
 }
+.right img{
+    width: 8px;
+    height: 13px;
+}
+
 

@@ -19,14 +19,14 @@
         </a>
         <h4 class="header_title color_white h4">振动计算</h4>
     </div>
-    <div>
+    <div class="content">
         <p class="title color_blue_2">地面震动速度</p>
         <div class="formula_box">
             <p class="formula">V = K(∛<span style="text-decoration: overline;">Q</span>/R)<sup>α</sup></p>
         </div>
         <div class="input_container">
             <div class="input_box clear " id="box_k">
-                <span class="labels color_white">K</span>
+                <span class="labels color_white letter_big">K</span>
                 <!--<div class="input" contenteditable="true" id="input_k">-->
                     <!--<div style="display: inline"><img src="../img/count_right.png" class="c_right_img" id="c_1_img"></div>-->
                 <!--</div>-->
@@ -51,29 +51,29 @@
                 <!--<div class="scroll_count_add"><span class="sign" id="add_1">+</span></div>-->
             <!--</div>-->
             <div class="input_box clear">
-                <span class="labels color_white">Q</span>
+                <span class="labels color_white letter_big">Q</span>
                 <div class="input">
                     <input id="val_q" type="number" name="val_k" class="input_ctro" placeholder="(kg)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
                 </div>
             </div>
             <div class="input_box clear">
-                <span class="labels color_white">R</span>
+                <span class="labels color_white letter_big">R</span>
                 <div class="input">
                     <input id="val_r" type="number" name="val_k" class="input_ctro" placeholder="(m)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
                 </div>
             </div>
             <div class="input_box clear" id="box_a">
-                <span class="labels color_white" style="font-size: 24px">α</span>
+                <span class="labels color_white letter_small">α</span>
                 <div class="input">
                     <input id="val_a" type="number" name="val_a" class="input_ctro" maxlength="15" placeholder="取值范围：1.3~2.0" oninput="if(value.length>15)value=value.slice(0,15)">
                     <!--<img src="../img/count_right.png" class="c_right_img" id="c_4_img">-->
                 </div>
             </div>
             <div class="input_box clear">
-                <span class="labels color_white">V</span>
+                <span class="labels color_white letter_big">V</span>
                 <div class="input" contenteditable="false" id="input_v">
                     <!--<img src="../img/count_right.png" class="c_right_img" id="c_5_img">-->
-                    <span id="result_v">(cm/s)</span>
+                    <span id="result_v"></span>
                     <div class="equals_box"><span class="equals color_white">=</span></div>
                 </div>
             </div>
@@ -84,10 +84,10 @@
         </div>
 
             <div class="input_box clear">
-                <span class="labels_2 color_white">Q<sub>max</sub></span>
+                <span class="labels_2 color_white letter_sub">Q<sub>max</sub></span>
                 <div class="input" contenteditable="false" id="input_q">
                     <!--<img src="../img/count_right.png" class="c_right_img" id="c_5_img">-->
-                    <span id="result_max">(kg)</span>
+                    <span id="result_max"></span>
                     <div class="equals_box"><span class="equals color_white">=</span></div>
                 </div>
             </div>

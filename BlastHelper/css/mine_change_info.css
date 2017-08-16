@@ -6,20 +6,48 @@ html,body{
     overflow: hidden;
 }
 .form_info{
-    padding: 0 15px;
-    margin-top: 50px;
+    padding: 5px 10px;
+    margin-top: 60px;
+    background-color: #FFFFFF;
 }
 #ownSign{
-    width: 100%;
-    height: 100px;
+    height: 50px;
     overflow: auto;
     resize: none;
 }
 .input_box{
+    width: 100%;
     margin: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+    font-size: 16px;
 }
-#change_ok{
-    background-color: #098ce5;
-    border-color: #098ce5;
-    margin: 0 auto;
+.sex_label{
+    margin-right: 1px;
+}
+.area_label{
+    vertical-align: top;
+}
+#tarea_box{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.input_con{
+    border: none;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    width: 65%;
+}
+/*提示颜色*/
+input::-webkit-input-placeholder{
+    color: #BFBFBF;
+}
+input:-moz-placeholder{
+    color: #BFBFBF;
+}
+input::-moz-placeholder{
+    color: #BFBFBF;
+}
+input:-ms-input-placeholder{
+    color: #BFBFBF;
 }

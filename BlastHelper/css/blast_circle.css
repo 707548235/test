@@ -4,7 +4,10 @@
     margin-top: 50px;
 }
 .content li{
-    border-bottom: 1px solid #BFBFBF;
+    border-bottom: 1px solid #e5e5e5;
+}
+.out_li{
+    padding-bottom: 10px;
 }
 .head_icon{
     width: 35px;
@@ -28,7 +31,7 @@
     font-size: 12px;
 }
 .pic{
-    padding: 0 15px;
+    padding: 0 15px 5px;
 }
 .pic img{
     /*width: 100%;*/
@@ -39,33 +42,37 @@
     margin: 2px 1px;
     border: 1px solid #9d9d9d;
 }
+.circle_img{
+    width: 18px;
+    height: 17px;
+}
 .txt_content{
-    font-size: 14px;
+    font-size: 15px;
     padding: 0 15px 5px;
 }
 .say_good{
-    padding: 5px;
+    padding: 10px 5px 10px 5px ;
     height: 30px;
 }
 .say_good div{
     float: right;
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 20px;
 }
-#say_num{
-    margin-right: 10px;
+.say_num{
+    color: #AFAFAF;
 }
-#good_num{
-    margin-right: 20px;
+.good_num{
+    color: #AFAFAF;
 }
 .say{
     padding: 5px 15px;
 }
 .say_nickname{
-    font-size: 15px;
+    font-size: 13px;
 }
 .say_content{
-    font-size: 14px;
+    font-size: 13px;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
@@ -77,6 +84,13 @@
 .say_input_div{
     display: none;
 }
+.say_input{
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+}
 .comment_ul li{
     border: none;
+}
+#btn_say{
+    background: #098CE5;
+    border: 1px solid #098CE5;
 }

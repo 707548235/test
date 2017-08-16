@@ -24,7 +24,7 @@
 .upload_img{
     width: 75px;
     height: 75px;
-    margin: 5px 0;
+    margin: 5px 5px 5px 0;
     display: inline-block;
     visibility: hidden;
 }

@@ -52,8 +52,10 @@ $(function () {
     $(pwd).keyup(function () {
         if(pwd.val().length > 5){
             loginBtnImg.attr("src","img/login_press_btn.png");
+            loginBtnImg.css("height","62px");
         } else{
             loginBtnImg.attr("src","img/login_btn.png");
+            loginBtnImg.css("height","46px");
         }
     })
     //验证码

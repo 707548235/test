@@ -1,7 +1,7 @@
 #mine_info{
     margin: 10px 0;
-    border-top: 1px solid #C7C7C7;
-    border-bottom: 1px solid #C7C7C7;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 .content{
     overflow: auto;
@@ -40,7 +40,7 @@
 }
 .level_box{
     height: 35px;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 .level{
     display: inline-block;
@@ -59,12 +59,15 @@
 }
 .mineList li{
     background-color: #ffffff;
-    padding: 10px 15px;
+    padding: 10px;
     font-size: 16px;
     position: relative;
-    border-bottom: 1px solid #C7C7C7;
+    border-bottom: 1px solid #e5e5e5;
 }
-
+.mine_img{
+    width: 25px;
+    height: 22px;
+}
 .mineList img{
     display: inline-block;
 }
@@ -72,22 +75,25 @@
     width: 20px;
     height: 20px;
     display: inline-block;
-    background: url(../img/defused_right.png) no-repeat center;
     position: absolute;
     margin: auto 10px;
     top: 0;
     right: 0;
     bottom: 0;
 }
+.right img{
+    width: 8px;
+    height: 13px;
+}
 .mineList li:first-child{
-    border-top: 1px solid #C7C7C7;
+    border-top: 1px solid #e5e5e5;
     margin: 10px 0;
 }
 .mineList li:nth-child(2){
-    border-top: 1px solid #C7C7C7;
+    border-top: 1px solid #e5e5e5;
 }
 .mineList li:nth-child(4),.mineList li:last-child{
-    border-top: 1px solid #C7C7C7;
+    border-top: 1px solid #e5e5e5;
     margin-top: 10px;
 }
 .dialog_body{

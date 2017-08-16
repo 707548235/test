@@ -16,9 +16,9 @@ $(function () {
             layerDialog("请输入正确的邮箱");
         } else if(code.trim() == ""){
             layerDialog("请输入验证码");
-        } else if(newPwd.trim() == ""){
-            layerDialog("请输入新密码");
-        }else{
+        } else if(newPwd.trim() == "" || newPwd.length < 6 || newPwd.length>10){
+            layerDialog("请输入6-10位新密码");
+        } else{
             doAjax(ajaxType.doPost,forgetPwd,{uname:email,validate:code,password:newPwd},forgetCallback);
         }
     });

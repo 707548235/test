@@ -34,11 +34,17 @@ $(function () {
 
     //发动态
     $(".camera").click(function () {
+        if(!checkLogin()){
+            return;
+        }
        window.location.href = "send_trends.html";
     });
 
 //    点赞
     $("body").on("click",".good_box",function (ev) {
+        if(!checkLogin()){
+            return;
+        }
         goodIndex = $(this).parents("li").index();
         commenId = allData[goodIndex].commentId;
         img = $("#content_ul .out_li:eq("+goodIndex+") .good_box img");
@@ -52,6 +58,9 @@ $(function () {
     });
     //要评论
     $("body").on("click",".say_box",function (ev) {
+        if(!checkLogin()){
+            return;
+        }
         $(".say_input_div").show();
         $("#say_input").focus();
         $("#say_input").val("");
@@ -85,7 +94,7 @@ function replyCallback(data){
     if(data.code == 1){
         var nickname = allData[sayIndex].commentUname;
         $("#content_ul .out_li:eq("+sayIndex+") .say_num").html(allData[sayIndex].reply.length+1);
-        $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_gray_2"><span class="say_nickname color_blue">${username}：</span>${commentTxt}</p> </div></li>`);
+        $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_gray_2"><span class="say_nickname color_blue">${nickname}：</span>${commentTxt}</p> </div></li>`);
         allData[sayIndex].reply.push({"commentUname":commentTxt,"contentReply":nickname});
     } else {
         layerDialog(data.msg);
@@ -130,13 +139,14 @@ function circleCallback(mydata){
     }
     $("#title").html(title);
     allData = data;
+    //var baseImg = new Base64().decode(data[0].base);
     //es6动态拼接
     for(var i=0;i<data.length;i++){
         var html = `<li class="out_li">
                 <div class="head">
-                <img src="${data[i].head}" class="head_icon">
+                <img src="${data[i].head == null ? '../img/mine_camera.png':data[i].head}" class="head_icon">
                 <div class="head_info">
-                <p class="color_black_2" id="nickname">${data[i].commentUname}</p>
+                <p class="color_black_3" id="nickname">${data[i].commentUname}</p>
                 <span class="color_gray_2" id="time">${new Date(parseInt(data[i].times)).Format("yyyy-MM-dd hh:mm")}</span>
                 </div>
                 </div>
@@ -163,10 +173,10 @@ function circleCallback(mydata){
                 </div>
                 <div class="say_good clear">
                 <div class="good_box">
-                <img src="../img/circle_good_pressed.png">&nbsp;<span class="good_num">${data[i].good==null?0:data[i].good}</span>
+                <img src="../img/circle_good_pressed.png" class="circle_img">&nbsp;<span class="good_num">${data[i].good==null?0:data[i].good}</span>
                 </div>
                 <div class = say_box>
-                <img src="../img/circle_say.png">&nbsp;<span class="say_num">${data[i].reply.length}</span>
+                <img src="../img/circle_say.png" class="circle_img">&nbsp;<span class="say_num"></span>
                 </div>
                 </div>
                 <ul class="comment_ul">`;
@@ -175,10 +185,11 @@ function circleCallback(mydata){
                 </div>
                 <div class="say_good clear">
                 <div class="good_box">
-                <img src="../img/circle_good.png">&nbsp;<span class="good_num">${data[i].good==null?0:data[i].good}</span>
+                <img src="../img/circle_good.png" class="circle_img">&nbsp;<span class="good_num">${data[i].good==null?0:data[i].good}</span>
                 </div>
                 <div class = say_box>
-                <img src="../img/circle_say.png">&nbsp;<span class="say_num">${data[i].reply.length}</span>
+                <img src="../img/circle_say.png" class="circle_img">&nbsp;<span class="say_num"></span>
+                <!--<img src="../img/circle_say.png">&nbsp;<span class="say_num">${data[i].reply.length}</span>-->
                 </div>
                 </div>
                 <ul class="comment_ul">`;
@@ -187,7 +198,7 @@ function circleCallback(mydata){
         for(var j=0;j<data[i].reply.length;j++){
             html4 += `<li>
                 <div class = "say">
-                <p class="say_content color_gray_2"><span class="say_nickname color_blue">${data[i].reply[j].commentUname}：</span>${data[i].reply[j].contentReply}</p>
+                <p class="say_content color_black_3"><span class="say_nickname color_blue">${data[i].reply[j].commentUname}：</span>${data[i].reply[j].contentReply}</p>
                 </div>
                 </li>`;
         }

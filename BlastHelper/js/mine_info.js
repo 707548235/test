@@ -22,6 +22,7 @@ function infoCallback(data){
     sessionStorage.setItem("infoData",JSON.stringify(data));
 }
 function headerCallback(data){
+
     if(data[0].base != null){
         $("#header_icon").attr("src",data[0].base);
     }

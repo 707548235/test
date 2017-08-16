@@ -17,36 +17,40 @@ $(function () {
     });
     $(".count_check").click(function (e) {
         if(username == null || username == ""){
-            layerDialog("需要先登录");
-            setTimeout(function () {
-                window.location.href = "../index.html";
-            },2000);
+            layer.open({
+                content:'<span style="font-size: 16px">需要先登录</span>',
+                btn:['去登录','取消'],
+                btnAlign:'c',
+                yes: function () {
+                    window.location.href = "../index.html";
+                }
+            });
             e.preventDefault();
             return false;
         }
     });
+    $("#mine_link_1").click(function () {
+        if(checkLogin()){
+            window.location.href = "../view/home.html";
+        }
+    });
+    $("#mine_link_2").click(function () {
+        if(checkLogin()){
+            window.location.href = "../view/library_new.html";
+        }
+    });
     //我的
-    $("#mine_link").click(function () {
-        if(username == null || username == ""){
-            layerDialog("需要先登录");
-            setTimeout(function () {
-                window.location.href = "../index.html";
-            },2000);
+    $("#mine_link_3").click(function () {
+        if(!checkLogin()){
             return;
         }
         window.location.href = "../view/mine.html";
     });
     //爆破圈
     $("#b_circle").click(function(){
-        if(username == null || username == ""){
-            layerDialog("登录后才能看动态哦");
-            setTimeout(function () {
-               window.location.href = "../index.html";
-            },2000);
-            return;
-        }
         sessionStorage.setItem("inUrl",blastCircleUrl);
         sessionStorage.setItem("inFlag","1");
+        window.location.href = "../index.html";
     });
     //获取最新三个动态头像
     doAjax(ajaxType.doPost,homeHeaderUrl,{},headCallback);

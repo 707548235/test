@@ -7,39 +7,41 @@
     <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/all.css" rel="stylesheet">
+    <link href="../lib/layer_mobile/need/layer.css">
     <link href="../css/library_new.css" rel="stylesheet">
 </head>
 <body class="bg_gray">
 <div>
     <div class="common_header bg_black">
-        <a class="search"><span class="glyphicon glyphicon-search"></span>&nbsp;搜索爆破内容</a>
+        <!--<a class="search"><span class="glyphicon glyphicon-search"></span>&nbsp;搜索爆破内容</a>-->
+        <h4 class="header_title color_white h4 bg_black">参数表</h4>
     </div>
     <!-- 导航-->
-    <div class="nav_box clear bg_white">
+    <div class="nav_box bg_white">
         <ul class="nav_bar_ul">
             <li class = "nav_bar color_gray">
-                <span>特种爆破</span>
+                <span class="normal_span">特<span class="underLine">种爆</span>破</span>
             </li>
             <li class = "nav_bar color_gray">
-                <span>爆破器材</span>
+                <span class="normal_span">爆<span class="underLine">破器</span>材</span>
             </li>
             <li class = "nav_bar color_gray">
-                <span>施工设备</span>
+                <span class="normal_span">施<span class="underLine">工设</span>备</span>
             </li>
             <li class = "nav_bar color_gray">
-                <span>岩体特性</span>
+                <span class="normal_span">岩<span class="underLine">体特</span>性</span>
             </li>
             <li class = "nav_bar color_gray">
-                <span>露天爆破</span>
+                <span class="normal_span">露<span class="underLine">天爆</span>破</span>
             </li>
             <li class = "nav_bar color_gray">
-                <span>掘进爆破</span>
+                <span class="normal_span">掘<span class="underLine">进爆</span>破</span>
             </li>
             <li class = "nav_bar color_gray">
-                <span>拆除爆破</span>
+                <span class="normal_span">拆<span class="underLine">除爆</span>破</span>
             </li>
             <li class = "nav_bar color_gray">
-                <span>爆破安全</span>
+                <span class="normal_span">爆<span class="underLine">破安</span>全</span>
             </li>
         </ul>
     </div>
@@ -47,26 +49,25 @@
         <ul id="item_list">
         </ul>
     </div>
-
 </div>
 <!-- bottom-->
 <div class="nav_bottom bg_white">
     <ul class="nav_bottom_ul">
-        <li>
-            <a href="../view/home.html">
+        <li id="mine_link_1">
+            <a href="javascript:void(0);">
                 <img src="../img/nav_bottom_1.png">
-                <p class="nav_bottom_txt color_gray_7">首页</p>
+                <p class="nav_bottom_txt nav_home color_gray_7">首页</p>
             </a>
         </li>
-        <li>
+        <li id="mine_link_2">
             <!--<a href="../view/library.html">-->
-            <a href="../view/library_new.html">
+            <a href="javascript:void(0);">
                 <img src="../img/nav_bottom_focus_2.png">
                 <p class="nav_bottom_txt color_blue">参数表</p>
             </a>
         </li>
-        <li>
-            <a href="javascript:void(0);" id="mine_link">
+        <li id="mine_link_3">
+            <a href="javascript:void(0);" >
                 <img src="../img/nav_bottom_3.png">
                 <p class="nav_bottom_txt color_gray_7">我的</p>
             </a>
@@ -74,7 +75,10 @@
     </ul>
 </div>
 <!-- js -->
+<script src="../lib/jquery-3.1.1.min.js"></script>
+<script src="../lib/layer_mobile/layer.js"></script>
 <script src="../lib/zepto-1.2.0.js"></script>
+<script src="../js/common.js"></script>
 <script src="../js/library_new.js"></script>
 </body>
 </html>

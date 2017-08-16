@@ -7,8 +7,18 @@ $(function () {
     });
     var myData = {uname:username,randomCode:randomCode};
     doAjax(ajaxType.doPost,mineUrl,myData,mineCallback);
+    $("#mine_link_1").click(function () {
+        if(checkLogin()){
+            window.location.href = "../view/home.html";
+        }
+    });
+    $("#mine_link_2").click(function () {
+        if(checkLogin()){
+            window.location.href = "../view/library_new.html";
+        }
+    });
     //我的
-    $("#mine_link").click(function () {
+    $("#mine_link_3").click(function () {
         if(username == null || username == ""){
             layerDialog("需要先登录");
             setTimeout(function () {
@@ -37,17 +47,24 @@ function mineCallback(data){
     var nowL = parseInt(data.experience/expMax);//当前等级
     var lessExp = expMax - data.experience%expMax;//到下级经验
     if(data.base != null && data.base != ""){
+        //var baseImg = new Base64().decode(data.base);
         $("#mine_icon").attr("src",data.base);
     }
     if(data.ncname != null && data.ncname != ""){
         $("#nickname").html(data.ncname);
+    } else {
+        $("#nickname").html(username);
     }
     $("#nowL").html(nowL);
     $("#lessL").html(lessExp);
     $("#nextL").html(nowL+1);
 
     sessionStorage.setItem("nowLevel",nowL);
-    sessionStorage.setItem("nowExp",data.experience);
+    var exper = data.experience;
+    if(exper == null){
+        exper = 0;
+    }
+    sessionStorage.setItem("nowExp",exper);
 }
 function exitCallback(data){
     window.location.href="../index.html";

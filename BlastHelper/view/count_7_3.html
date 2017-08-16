@@ -26,7 +26,7 @@
     </div>
     <div class="input_container">
         <div class="input_box clear">
-            <span class="labels color_white">d</span>
+            <span class="labels color_white letter_small">d</span>
             <div class="input">
                 <input id="val_d" type="number" name="val_d" class="input_ctro" placeholder="(mm)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
             </div>
@@ -35,7 +35,7 @@
             <span class="labels color_white" style="font-size: 18px;">R<sub>F</sub></span>
             <div class="input" contenteditable="false" id="input_r">
                 <!--<img src="../img/count_right.png" class="c_right_img" id="c_5_img">-->
-                <span id="result_r"> (m)</span>
+                <span id="result_r"></span>
                 <div class="equals_box"><span class="equals color_white">=</span></div>
             </div>
         </div>
@@ -45,33 +45,33 @@
         <p class="formula">S = K<sub>1</sub>K<sub>2</sub>(d<sup>3</sup>/8W<sup>3</sup>)x10<sup>-2</sup></p>
     </div>
     <div class="input_box clear" id="box_k1">
-        <span class="labels color_white" style="font-size: 18px">K<sub>1</sub></span>
+        <span class="labels color_white letter_sub">K<sub>1</sub></span>
         <div class="input">
             <input id="val_k1" type="number" name="val_k1" class="input_ctro" maxlength="15" placeholder="0.3~2.0" oninput="if(value.length>15)value=value.slice(0,15)">
             <!--<img src="../img/count_right.png" class="c_right_img" id="c_3_img">-->
         </div>
     </div>
     <div class="input_box clear" id="box_k2">
-        <span class="labels color_white" style="font-size: 18px">K<sub>2</sub></span>
+        <span class="labels color_white letter_sub" >K<sub>2</sub></span>
         <div class="input">
             <input id="val_k2" type="number" name="val_k2" class="input_ctro" placeholder="0.3~2.0(m)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
             <!--<img src="../img/count_right.png" class="c_right_img" id="c_4_img">-->
         </div>
     </div>
     <div class="input_box clear">
-        <span class="labels color_white">W</span>
+        <span class="labels color_white letter_big">W</span>
         <div class="input">
             <input id="val_w" type="number" name="val_w" class="input_ctro" placeholder="(m)" maxlength="15" oninput="if(value.length>15)value=value.slice(0,15)">
         </div>
     </div>
     <div class="input_box clear">
         <div class="result_box">
-            <span class="labels_3 color_white">S</span>
+            <span class="labels_3 color_white letter_big">S</span>
         </div>
 
         <div class="input" contenteditable="false" id="input_s">
             <!--<img src="../img/count_right.png" class="c_right_img" id="c_5_img">-->
-            <span id="result_s"> (m)</span>
+            <span id="result_s"></span>
             <div class="equals_box"><span class="equals color_white">=</span></div>
         </div>
     </div>

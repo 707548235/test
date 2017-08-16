@@ -40,11 +40,11 @@ function upload(url){
         var width = image.width;//根据图片的宽高，将图片进行压缩
         var height = image.height;
         if(width > height) {
-            height = Math.round(500 * width / height);
-            width = 500;
+            height = Math.round(50 * width / height);
+            width = 50;
         } else {
-            width = Math.round(500 * width / height);
-            height = 500;
+            width = Math.round(50 * width / height);
+            height = 50;
         }
         var canvas = document.getElementById("photo");
         var cax = canvas.getContext('2d');
@@ -53,7 +53,6 @@ function upload(url){
         cax.drawImage(image, 0, 0, width, height);//重绘
         var dataUrl = canvas.toDataURL("image/png");//dataUrl 即为base编码字符串
 //            console.log(dataUrl);
-
         //上传接口
         doAjax(ajaxType.doPost,headerUrl,{uname:username,base:dataUrl,randomCode:randomCode},uploadCallback)
     }

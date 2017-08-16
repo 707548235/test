@@ -18,26 +18,30 @@
                 <span class="header_back color_white">返回</span>
             </a>
             <h4 class="header_title color_white h4">修改个人信息</h4>
-            <span class="camera color_white" id="change_ok">保存</span>
         </div>
         <div class="form_info">
             <form action="/" method="post">
                 <div class="input-group input_box">
-                    <span>昵称：</span>
-                    <input type="text" name="nickname" id="nickname" placeholder="请输入昵称" class="input_con" maxlength="10">
+                    <span class="input-group-addon">昵称</span>
+                    <input type="text" name="nickname" id="nickname" class="form-control" maxlength="10">
                 </div>
                 <div class="input-group input_box">
-                    <span class="sex_label">性别： </span>
-                        <input type="radio" name="sex" value="man" id="man" style="margin-left: 15px">男
+                    <span class="input-group-addon">性别</span>
+                    <div class="form-control">
+                        <input type="radio" name="sex" value="man" id="man"  style="margin-left: 15px">男
                         <input type="radio" name="sex" value="woman" id="woman" style="margin-left: 15px" checked>女
+                    </div>
                 </div>
                 <div class="input-group input_box">
-                    <span class="">地区：</span>
-                    <input type="text" name="area" id="area" placeholder="请输入地域" class="input_con" maxlength="10">
+                    <span class="input-group-addon">地区</span>
+                    <input type="text" name="area" id="area" class="form-control" maxlength="10">
                 </div>
-                <div class="input-group input_box" id="tarea_box">
-                    <span class="area_label" >个性签名：</span>
-                    <textarea name="ownSign" id="ownSign" class="input_con" maxlength="50" rows="3" placeholder="展现个性的时候到了"></textarea>
+                <div class="input-group input_box">
+                    <span class="input-group-addon" >个性签名</span>
+                    <textarea name="ownSign" id="ownSign" class="form-control" maxlength="100" rows="3" placeholder="说点什么吧！"></textarea>
+                </div>
+                <div style="text-align: center;margin-top: 30px;">
+                    <button type="button" class="btn btn-primary" id="change_ok">确认修改</button>
                 </div>
             </form>
         </div>

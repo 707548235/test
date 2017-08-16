@@ -30,6 +30,9 @@
     font-size: 17px;
     margin: 0 20px;
 }
+#login_btn_img{
+    height: 46px;
+}
 .form_login{
     margin: 0 20px;
     font-size: 15px;
@@ -54,7 +57,7 @@
 .form_login input{
     border: none;
     display: inline-block;
-    width: 60%;
+    width: 100%;
     overflow: hidden;
 }
 .form_login button{

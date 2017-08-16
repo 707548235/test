@@ -56,28 +56,34 @@ $(function () {
             {name:"爆破震动安全允许标准",table:"8_4"},
             {name:"地震烈度表",table:"8_5"}]];
     var navIndex = 0;
-//我的
-    $("#mine_link").click(function () {
-        if(username == null || username == ""){
-            layerDialog("需要先登录");
-            setTimeout(function () {
-                window.location.href = "../index.html";
-            },2000);
-            return;
+    $("#mine_link_1").click(function () {
+        if(checkLogin()){
+            window.location.href = "../view/home.html";
         }
-        window.location.href = "../view/mine.html";
+    });
+    $("#mine_link_2").click(function () {
+        if(checkLogin()){
+            window.location.href = "../view/library_new.html";
+        }
+    });
+//我的
+    $("#mine_link_3").click(function () {
+        if(checkLogin()){
+            window.location.href = "../view/mine.html";
+        }
     });
     $(".nav_bar").click(function () {
         var current = $(this);
         navIndex = current.index();
         $(".nav_bar").each(function () {
-            $(".nav_bar span").css({"border-bottom":"2px solid #ffffff","color":"#9B9B9B"});
+            $(".nav_bar span").css({"border-bottom":"2px solid #ffffff","color":"#6c6c6c"});
         });
-        current.find("span").eq(0).css({"border-bottom":"2px solid #046FD3","color":"#046FD3"});
+        current.find(".normal_span").eq(0).css({"color":"#046FD3"});
+        current.find("span .underLine").eq(0).css({"border-bottom":"2px solid #046FD3","color":"#046FD3"});
         $("#item_list").empty();
         for(var i=0;i<data[navIndex].length;i++) {
             $("#item_list").append('<li class="item_li"><a href="javascript:" class="color_black_2 " > <div><span> ' + data[navIndex][i].name +
-            '</span><div class="right"></div><div class="details"></div> </div> </a> </li>');
+            '</span><div class="right"><img src="../img/defused_right.png"></div><div class="details"></div> </div> </a> </li>');
         }
     });
     $("#item_list").on("click",".item_li", function () {
