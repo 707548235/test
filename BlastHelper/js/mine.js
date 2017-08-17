@@ -65,6 +65,7 @@ function mineCallback(data){
         exper = 0;
     }
     sessionStorage.setItem("nowExp",exper);
+    localStorage.setItem("nickname",data.ncname);
 }
 function exitCallback(data){
     window.location.href="../index.html";

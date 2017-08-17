@@ -4,6 +4,10 @@
 
 //用户名
 var username = localStorage.getItem("username");
+var nname = localStorage.getItem("nickname");
+if(nname == null || nname == "" || nname == "null"){
+    nname = username;
+}
 var ajaxType = {doPost:"POST",doGet:"GET"};
 var randomCode="";
 if(localStorage.getItem("randomCode") == null){

@@ -12,7 +12,10 @@
     color:#333;
 }
 .color_black_3{
-    color: #343434;
+     color: #343434;
+ }
+.color_blue_4{
+    color: #2d4490;
 }
 .color_gray{
     color: #9B9B9B;
@@ -171,7 +174,7 @@ sub,sup{
     margin-top:3px;
 }
 .nav_home{
-    margin-top: 4px;
+    margin-top: 3px;
 }
 .nav_bottom_ul img{
     margin-top: 4px;

@@ -122,6 +122,7 @@ function loginCallback(data) {
         localStorage.setItem("username",username);
         localStorage.setItem("loginDate",new Date().getTime());
         localStorage.setItem("randomCode",randomCode);
+        localStorage.setItem("nickname",data.ncname);
     }
     if(data.code == 1){
         window.location.href = "view/home.html";

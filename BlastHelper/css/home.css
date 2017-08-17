@@ -37,6 +37,10 @@
     margin-top: 10px;
     padding: 5px;
 }
+.home_more_right{
+    width: 7px;
+    height: 11px;
+}
 .into_head{
     width: 100px;
     height: 50px;
@@ -93,10 +97,9 @@
     height: 40px;
     border: 1px solid #9d9d9d;
     border-radius: 50%;
-    margin: 10px 9px 5px;
+    margin: 10px 5px 5px 9px;
 }
 .section_name{
-    margin: 8px 5px;
     font-size: 15px;
 }
 .section_image{

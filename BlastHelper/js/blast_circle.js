@@ -94,7 +94,7 @@ function replyCallback(data){
     if(data.code == 1){
         var nickname = allData[sayIndex].commentUname;
         $("#content_ul .out_li:eq("+sayIndex+") .say_num").html(allData[sayIndex].reply.length+1);
-        $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_gray_2"><span class="say_nickname color_blue">${nickname}：</span>${commentTxt}</p> </div></li>`);
+        $("#content_ul .out_li:eq("+sayIndex+") .comment_ul").append(`<li><div class = "say"> <p class="say_content color_black_3"><span class="say_nickname color_blue_4">${nname}：</span>${commentTxt}</p> </div></li>`);
         allData[sayIndex].reply.push({"commentUname":commentTxt,"contentReply":nickname});
     } else {
         layerDialog(data.msg);
@@ -146,7 +146,7 @@ function circleCallback(mydata){
                 <div class="head">
                 <img src="${data[i].head == null ? '../img/mine_camera.png':data[i].head}" class="head_icon">
                 <div class="head_info">
-                <p class="color_black_3" id="nickname">${data[i].commentUname}</p>
+                <p class="color_blue_4" id="nickname">${data[i].commentUname}</p>
                 <span class="color_gray_2" id="time">${new Date(parseInt(data[i].times)).Format("yyyy-MM-dd hh:mm")}</span>
                 </div>
                 </div>
@@ -198,7 +198,7 @@ function circleCallback(mydata){
         for(var j=0;j<data[i].reply.length;j++){
             html4 += `<li>
                 <div class = "say">
-                <p class="say_content color_black_3"><span class="say_nickname color_blue">${data[i].reply[j].commentUname}：</span>${data[i].reply[j].contentReply}</p>
+                <p class="say_content color_black_3"><span class="say_nickname color_blue_4">${data[i].reply[j].commentUname}：</span>${data[i].reply[j].contentReply}</p>
                 </div>
                 </li>`;
         }

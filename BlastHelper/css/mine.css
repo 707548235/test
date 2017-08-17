@@ -27,7 +27,7 @@
     font-size: 16px;
     padding-top: 5px;
     margin-bottom: 5px;
-    margin-left: 70px;
+    margin-left:60px;
 }
 .nickname_box{
     display: inline-block;
@@ -35,8 +35,11 @@
 }
 .nickname_box span{
     font-size: 13px;
-    margin-left: 70px;
+    margin-left: 60px;
 
+}
+.mine_item{
+    padding-left: 10px;
 }
 .level_box{
     height: 35px;
@@ -65,14 +68,13 @@
     border-bottom: 1px solid #e5e5e5;
 }
 .mine_img{
-    width: 25px;
-    height: 22px;
+    width: 31px;
+    height: 31px;
 }
 .mineList img{
     display: inline-block;
 }
 .right{
-    width: 20px;
     height: 20px;
     display: inline-block;
     position: absolute;
