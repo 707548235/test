@@ -77,4 +77,16 @@ function newsCallback(data){
                 </li>`;
     $("#news").append(html);
 }
+//apiCloud监听手机back键
+apiready = function() {
+    api.addEventListener({
+        name:'keyback'
+    }, function (ret, err) {
+        alert("a");
+        api.closeWidget({
+            id:'A6058834951299'
+        });
+    });
+}
+
 

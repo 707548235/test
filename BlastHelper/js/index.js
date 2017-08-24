@@ -2,10 +2,10 @@
  * Created by 13995 on 2017/7/18.
  */
 //禁用浏览器回退
-history.pushState(null,null,document.URL);
-window.addEventListener('popstate', function () {
-    history.pushState(null,null,document.URL);
-});
+//history.pushState(null,null,document.URL);
+//window.addEventListener('popstate', function () {
+//    history.pushState(null,null,document.URL);
+//});
 
 $(function () {
     var loginCode = '<div id="post_info"> ' +
@@ -51,11 +51,9 @@ $(function () {
     var loginBtnImg = $("#login_btn_img");
     $(pwd).keyup(function () {
         if(pwd.val().length > 5){
-            loginBtnImg.attr("src","img/login_press_btn.png");
-            loginBtnImg.css("height","62px");
+            loginBtnImg.css("background","rgba(9,140,229,1)");
         } else{
-            loginBtnImg.attr("src","img/login_btn.png");
-            loginBtnImg.css("height","46px");
+            loginBtnImg.css("background","rgba(9,140,229,0.25)");
         }
     })
     //验证码
@@ -129,4 +127,14 @@ function loginCallback(data) {
     } else{
         layerDialog(data.msg);
     }
+}
+apiready = function() {
+    api.addEventListener({
+        name:'keyback'
+    }, function (ret, err) {
+        alert("a");
+        api.closeWidget({
+            id:'A6058834951299'
+        });
+    });
 }

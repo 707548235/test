@@ -34,6 +34,12 @@
 }
 #login_btn_img{
     height: 46px;
+    width: 100%;
+    background-color: rgba(9,140,229,0.25);
+    border:1px solid rgba(9,140,229,0.25);
+    font-size: 17px;
+    outline: none;
+    border-radius: 4px;
 }
 .form_login{
     margin: 0 20px;
@@ -72,7 +78,7 @@
 }
 .input_box{
     border-bottom:1px solid #9B9B9B;
-    padding:21px 10px 9px   ;
+    padding:21px 10px 9px;
 }
 .input_box #send_code_btn{
     width: 80px;
@@ -93,6 +99,7 @@
 }
 #login_btn img{
     width: 100%;
+
 }
 
 /*快速登录*/

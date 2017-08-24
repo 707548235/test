@@ -2,6 +2,9 @@
  * Created by 13995 on 2017/7/25.
  */
 $(function () {
+    if(username == null){
+        window.location.href='../index.html';
+    }
     $(".dialog_ok").click(function () {
         doAjax(ajaxType.doPost,exitUrl,{uname:username,randomCode:randomCode},exitCallback);
     });
