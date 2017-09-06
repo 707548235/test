@@ -2,6 +2,7 @@
  * Created by Administrator on 2017/7/29 0029.
  */
 $(function () {
+    $(".nav_box").scrollLeft(250);
     var f, S, C, b, e,c1,c2,q;
     var flag;
 
@@ -32,5 +33,27 @@ $(function () {
             q = (0.3*Math.pow(f,0.5) + 2/Math.pow(S,0.5))*C*b*e*c1*c2;
             $("#val_a8").val(q.toFixed(2));
         }
+    });
+
+    $("#item_1").click(function () {
+        window.location.href="count_1_1.html";
+    });
+    $("#item_2").click(function () {
+        window.location.href="count_1_2.html";
+    });
+    $("#item_3").click(function () {
+        window.location.href="count_1_3.html";
+    });
+    $("#item_4").click(function () {
+        window.location.href="count_1_4.html";
+    });
+    $("#item_5").click(function () {
+        window.location.href="count_2_3.html";
+    });
+    $("#item_6").click(function () {
+        window.location.href="count_2_5.html";
+    });
+    $("#item_7").click(function () {
+        window.location.href="count_7_3.html";
     });
 });

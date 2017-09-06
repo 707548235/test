@@ -82,7 +82,6 @@ apiready = function() {
     api.addEventListener({
         name:'keyback'
     }, function (ret, err) {
-        alert("a");
         api.closeWidget({
             id:'A6058834951299'
         });

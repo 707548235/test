@@ -2,12 +2,23 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/css/count.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_1.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_2.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_3.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_4.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_4.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_5.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_5.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_6.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_7.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/home_tab_8.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/blast_circle.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/common.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/count_4_2.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/count_7_3.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/forget_password.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/home.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/home_tab_group.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/library_new.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/library_new_img.js" charset="UTF-8" />

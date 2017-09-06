@@ -17,15 +17,15 @@ $(function () {
     function doFlag(num){
         return (num=="" || isNaN(num));
     }
-    $("#result_a").click(function () {
-        de = $("#val_a1").val();
-        pe = $("#val_a2").val();
+    $("#result_c").click(function () {
+        de = $("#val_c1").val();
+        pe = $("#val_c2").val();
         flag = doFlag(de) || doFlag(pe);
         if(flag){
             toast();
         } else{
             ql = 0.25*Math.PI*Math.pow(de,2)*pe*Math.pow(10,-6);
-            $("#val_a3").val(ql.toFixed(2));
+            $("#val_c3").val(ql.toFixed(2));
         }
     });
 });

@@ -2,6 +2,27 @@
  * Created by Administrator on 2017/7/29 0029.
  */
 $(function () {
+    $("#item_1").click(function () {
+        window.location.href="count_1_1.html";
+    });
+    $("#item_2").click(function () {
+        window.location.href="count_1_2.html";
+    });
+    $("#item_3").click(function () {
+        window.location.href="count_1_3.html";
+    });
+    $("#item_4").click(function () {
+        window.location.href="count_1_4.html";
+    });
+    $("#item_5").click(function () {
+        window.location.href="count_2_3.html";
+    });
+    $("#item_6").click(function () {
+        window.location.href="count_2_5.html";
+    });
+    $("#item_7").click(function () {
+        window.location.href="count_7_3.html";
+    });
     var a, h, b, d,w1,c1,w2,c2,w3;
     $("#result_a").click(function () {
         a = $("#val_a1").val();

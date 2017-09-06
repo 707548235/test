@@ -2,7 +2,7 @@
  * Created by 13995 on 2017/7/26.
  */
 $(function () {
-
+    $(".nav_box").scrollLeft(250);
     var d, r,k1,k2, w,s;
     //计算
     $("#input_r").click(function () {
@@ -32,5 +32,27 @@ $(function () {
             s = k1*k2*(Math.pow(d,3)/(8*Math.pow(w,3)))*Math.pow(10,-2);
             $("#result_s").text(s.toFixed(2));
         }
+    });
+
+    $("#item_1").click(function () {
+        window.location.href="count_1_1.html";
+    });
+    $("#item_2").click(function () {
+        window.location.href="count_1_2.html";
+    });
+    $("#item_3").click(function () {
+        window.location.href="count_1_3.html";
+    });
+    $("#item_4").click(function () {
+        window.location.href="count_1_4.html";
+    });
+    $("#item_5").click(function () {
+        window.location.href="count_2_3.html";
+    });
+    $("#item_6").click(function () {
+        window.location.href="count_2_5.html";
+    });
+    $("#item_7").click(function () {
+        window.location.href="count_7_3.html";
     });
 });

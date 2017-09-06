@@ -1,0 +1,40 @@
+@charset "utf-8";
+.content{
+    margin-top: 0;
+}
+.nav_box{
+    margin-top: 45px;
+    text-align: center;
+    padding:1px 10px;
+    width: 100%;
+    overflow: auto;
+    border-bottom: 1px solid #E5E5E5;
+}
+/*隐藏滚动条，兼容不好*/
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    background-color: rgba(0,0,0,0);
+}
+.nav_bar_ul{
+    width: 200%;
+    height: 41px;
+}
+.nav_box li{
+    margin-top: 10px;
+    text-overflow: ellipsis;
+}
+.nav_bar{
+    float: left;
+    width: 12.5%;
+    /*width:25%;*/
+    font-size: 15px;
+}
+
+.underLine{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #046FD3;
+    color:#046FD3;
+}
+

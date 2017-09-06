@@ -10,7 +10,7 @@
     margin-top: 50px;
 }
 .home_tab li{
-    width: 20%;
+    width: 25%;
     float: left;
     text-align: center;
 }
@@ -20,8 +20,8 @@
 .tab_img{
     display: block;
     margin: 10px auto;
-    width: 26px;
-    height: 33px;
+    width: 28px;
+    height: 28px;
 }
 .tab_head{
     font-size: 10px;
